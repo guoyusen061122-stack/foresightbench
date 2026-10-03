@@ -1,0 +1,4163 @@
+{
+  "seed": 20261003,
+  "n_per_cell": 60,
+  "conditions": {
+    "S1_same": {
+      "desc": "同分布（校准集本身，作为对照）",
+      "families": [
+        "arith",
+        "csp",
+        "seq",
+        "trace"
+      ],
+      "difficulties": [
+        2,
+        3,
+        4
+      ],
+      "n_tasks": 720,
+      "per_solver": {
+        "tight": {
+          "n": 720,
+          "accuracy": 0.4736111111111111,
+          "accuracy_ci": [
+            0.43737626231679627,
+            0.5101260641590514
+          ],
+          "ece": 0.3161726101964817,
+          "auroc": 0.8416228847329367,
+          "auroc_ci": [
+            0.8082238306045487,
+            0.872992277992278
+          ],
+          "auroc_defined": true,
+          "brier": 0.25337686590932645,
+          "brier_ci": [
+            0.22961135551611506,
+            0.27583241131690883
+          ],
+          "reliability": 0.14305313326143243,
+          "resolution": 0.1388395542154073,
+          "reliability_exact": 0.16570051973736757,
+          "resolution_exact": 0.16162728037125118,
+          "within_bin_spread": -0.00014033967990856848,
+          "bin_residual": -0.0001403396799085077,
+          "n_groups": 207,
+          "uncertainty": 0.24930362654320987,
+          "brier_from_parts": 0.2533768659093263,
+          "aurc": 0.35816964587967104,
+          "utility": {
+            "utility": 0.7425000000000014,
+            "capture": 0.7858737568500113,
+            "capture_vs_best_constant": 0.5580226225387451,
+            "u_never": 0.4736111111111111,
+            "u_all": 0.6500000000000039,
+            "u_oracle": 0.8157638888888902,
+            "tau": 0.95
+          },
+          "per_family": {
+            "arith": {
+              "n": 180,
+              "accuracy": 1.0,
+              "accuracy_ci": [
+                0.9791037501849419,
+                1.0
+              ],
+              "ece": 5.162270613645603e-05,
+              "auroc": null,
+              "auroc_ci": null,
+              "auroc_defined": false,
+              "brier": 1.9224355443527767e-08,
+              "brier_ci": [
+                3.514351867762056e-09,
+                4.280473468773603e-08
+              ],
+              "reliability": 2.664903788850895e-09,
+              "resolution": 0.0,
+              "reliability_exact": 1.9224355443527767e-08,
+              "resolution_exact": 0.0,
+              "within_bin_spread": 1.6559451654669546e-08,
+              "bin_residual": 1.655945165467687e-08,
+              "n_groups": 179,
+              "uncertainty": 0.0,
+              "brier_from_parts": 1.9224355443527767e-08,
+              "aurc": 0.0,
+              "utility": {
+                "utility": 1.0,
+                "capture": 0.0,
+                "capture_vs_best_constant": 0.0,
+                "u_never": 1.0,
+                "u_all": 0.649999999999999,
+                "u_oracle": 1.0,
+                "tau": 0.95
+              }
+            },
+            "csp": {
+              "n": 180,
+              "accuracy": 0.011111111111111112,
+              "accuracy_ci": [
+                0.0030523109083073845,
+                0.03960180002197173
+              ],
+              "ece": 0.689047619047619,
+              "auroc": 0.47191011235955055,
+              "auroc_ci": [
+                0.22905027932960895,
+                0.7191011235955056
+              ],
+              "auroc_defined": true,
+              "brier": 0.5123494583018393,
+              "brier_ci": [
+                0.47948778029730416,
+                0.5444290753338372
+              ],
+              "reliability": 0.5001022884787443,
+              "resolution": 8.29415586897527e-05,
+              "reliability_exact": 0.5017145376669186,
+              "resolution_exact": 0.0003527336860670193,
+              "within_bin_spread": 0.0013424570607970272,
+              "bin_residual": 0.0013424570607970532,
+              "n_groups": 13,
+              "uncertainty": 0.010987654320987654,
+              "brier_from_parts": 0.5123494583018393,
+              "aurc": 0.9914207508867261,
+              "utility": {
+                "utility": 0.5958333333333332,
+                "capture": 0.9096802074330177,
+                "capture_vs_best_constant": 0.0,
+                "u_never": 0.011111111111111072,
+                "u_all": 0.649999999999999,
+                "u_oracle": 0.6538888888888879,
+                "tau": 0.95
+              }
+            },
+            "seq": {
+              "n": 180,
+              "accuracy": 0.3888888888888889,
+              "accuracy_ci": [
+                0.32070200813682553,
+                0.4617193807109653
+              ],
+              "ece": 0.3444444444444444,
+              "auroc": 0.7727272727272727,
+              "auroc_ci": [
+                0.7252252252252253,
+                0.8177966101694916
+              ],
+              "auroc_defined": true,
+              "brier": 0.2911111111111111,
+              "brier_ci": [
+                0.2306666666666667,
+                0.3573333333333334
+              ],
+              "reliability": 0.12907407407407406,
+              "resolution": 0.07561728395061729,
+              "reliability_exact": 0.12907407407407406,
+              "resolution_exact": 0.07561728395061729,
+              "within_bin_spread": 0.0,
+              "bin_residual": 0.0,
+              "n_groups": 2,
+              "uncertainty": 0.23765432098765435,
+              "brier_from_parts": 0.2911111111111111,
+              "aurc": 0.2701518830231953,
+              "utility": {
+                "utility": 0.6055555555555558,
+                "capture": 0.5454545454545469,
+                "capture_vs_best_constant": 0.0,
+                "u_never": 0.38888888888888884,
+                "u_all": 0.649999999999999,
+                "u_oracle": 0.7861111111111106,
+                "tau": 0.95
+              }
+            },
+            "trace": {
+              "n": 180,
+              "accuracy": 0.49444444444444446,
+              "accuracy_ci": [
+                0.4222872271676107,
+                0.566833842274779
+              ],
+              "ece": 0.23125,
+              "auroc": 0.9086306951475491,
+              "auroc_ci": [
+                0.8606811145510835,
+                0.9491236918421384
+              ],
+              "auroc_defined": true,
+              "brier": 0.210046875,
+              "brier_ci": [
+                0.17108072916666667,
+                0.251421875
+              ],
+              "reliability": 0.10049168867468097,
+              "resolution": 0.13882501089522578,
+              "reliability_exact": 0.11626349522524092,
+              "resolution_exact": 0.15618575602771007,
+              "within_bin_spread": -0.0015889385819243152,
+              "bin_residual": -0.0015889385819243262,
+              "n_groups": 17,
+              "uncertainty": 0.24996913580246913,
+              "brier_from_parts": 0.21004687499999997,
+              "aurc": 0.19978283210325365,
+              "utility": {
+                "utility": 0.7686111111111106,
+                "capture": 0.8343195266272182,
+                "capture_vs_best_constant": 0.6853932584269664,
+                "u_never": 0.49444444444444446,
+                "u_all": 0.649999999999999,
+                "u_oracle": 0.8230555555555552,
+                "tau": 0.95
+              }
+            }
+          }
+        },
+        "tight::oracle_conf": {
+          "n": 720,
+          "accuracy": 0.4736111111111111,
+          "accuracy_ci": [
+            0.43737626231679627,
+            0.5101260641590514
+          ],
+          "ece": 0.0,
+          "auroc": 1.0,
+          "auroc_ci": [
+            1.0,
+            1.0
+          ],
+          "auroc_defined": true,
+          "brier": 0.0,
+          "brier_ci": [
+            0.0,
+            0.0
+          ],
+          "reliability": 0.0,
+          "resolution": 0.2493036265432099,
+          "reliability_exact": 0.0,
+          "resolution_exact": 0.2493036265432099,
+          "within_bin_spread": 0.0,
+          "bin_residual": 2.7755575615628914e-17,
+          "n_groups": 2,
+          "uncertainty": 0.24930362654320987,
+          "brier_from_parts": -2.7755575615628914e-17,
+          "aurc": 0.17279203658292083,
+          "utility": {
+            "utility": 0.8157638888888902,
+            "capture": 1.0,
+            "capture_vs_best_constant": 1.0,
+            "u_never": 0.4736111111111111,
+            "u_all": 0.6500000000000039,
+            "u_oracle": 0.8157638888888902,
+            "tau": 0.95
+          }
+        },
+        "tight::constant_one": {
+          "n": 720,
+          "accuracy": 0.4736111111111111,
+          "accuracy_ci": [
+            0.43737626231679627,
+            0.5101260641590514
+          ],
+          "ece": 0.5263888888888889,
+          "auroc": 0.5,
+          "auroc_ci": [
+            0.5,
+            0.5
+          ],
+          "auroc_defined": true,
+          "brier": 0.5263888888888889,
+          "brier_ci": [
+            0.49166666666666664,
+            0.5611111111111111
+          ],
+          "reliability": 0.27708526234567904,
+          "resolution": 0.0,
+          "reliability_exact": 0.27708526234567904,
+          "resolution_exact": 0.0,
+          "within_bin_spread": 0.0,
+          "bin_residual": 0.0,
+          "n_groups": 1,
+          "uncertainty": 0.24930362654320987,
+          "brier_from_parts": 0.5263888888888889,
+          "aurc": 0.3194016266703766,
+          "utility": {
+            "utility": 0.4736111111111111,
+            "capture": 0.0,
+            "capture_vs_best_constant": 0.0,
+            "u_never": 0.4736111111111111,
+            "u_all": 0.6500000000000039,
+            "u_oracle": 0.8157638888888902,
+            "tau": 0.95
+          }
+        },
+        "tight::constant_half": {
+          "n": 720,
+          "accuracy": 0.4736111111111111,
+          "accuracy_ci": [
+            0.43737626231679627,
+            0.5101260641590514
+          ],
+          "ece": 0.026388888888888906,
+          "auroc": 0.5,
+          "auroc_ci": [
+            0.5,
+            0.5
+          ],
+          "auroc_defined": true,
+          "brier": 0.25,
+          "brier_ci": [
+            0.25,
+            0.25
+          ],
+          "reliability": 0.0006963734567901244,
+          "resolution": 0.0,
+          "reliability_exact": 0.0006963734567901244,
+          "resolution_exact": 0.0,
+          "within_bin_spread": 0.0,
+          "bin_residual": 0.0,
+          "n_groups": 1,
+          "uncertainty": 0.24930362654320987,
+          "brier_from_parts": 0.25,
+          "aurc": 0.3194016266703766,
+          "utility": {
+            "utility": 0.6500000000000039,
+            "capture": 0.5155266896691794,
+            "capture_vs_best_constant": 0.0,
+            "u_never": 0.4736111111111111,
+            "u_all": 0.6500000000000039,
+            "u_oracle": 0.8157638888888902,
+            "tau": 0.95
+          }
+        },
+        "tight::inverted_conf": {
+          "n": 720,
+          "accuracy": 0.4736111111111111,
+          "accuracy_ci": [
+            0.43737626231679627,
+            0.5101260641590514
+          ],
+          "ece": 1.0,
+          "auroc": 0.0,
+          "auroc_ci": [
+            0.5,
+            0.5
+          ],
+          "auroc_defined": true,
+          "brier": 1.0,
+          "brier_ci": [
+            1.0,
+            1.0
+          ],
+          "reliability": 1.0,
+          "resolution": 0.2493036265432099,
+          "reliability_exact": 1.0,
+          "resolution_exact": 0.2493036265432099,
+          "within_bin_spread": 0.0,
+          "bin_residual": 0.0,
+          "n_groups": 2,
+          "uncertainty": 0.24930362654320987,
+          "brier_from_parts": 1.0,
+          "aurc": 0.8638518625307234,
+          "utility": {
+            "utility": 0.3078472222222186,
+            "capture": 0.0,
+            "capture_vs_best_constant": 0.0,
+            "u_never": 0.4736111111111111,
+            "u_all": 0.6500000000000039,
+            "u_oracle": 0.8157638888888902,
+            "tau": 0.95
+          }
+        },
+        "ample": {
+          "n": 720,
+          "accuracy": 0.5861111111111111,
+          "accuracy_ci": [
+            0.5497700543479596,
+            0.6215381434676951
+          ],
+          "ece": 0.3117460317460187,
+          "auroc": 0.7202121568752187,
+          "auroc_ci": [
+            0.6775764558022622,
+            0.7598026897105197
+          ],
+          "auroc_defined": true,
+          "brier": 0.27211457545981355,
+          "brier_ci": [
+            0.24387559838750314,
+            0.30041317082388513
+          ],
+          "reliability": 0.14292483365644326,
+          "resolution": 0.11362000701330838,
+          "reliability_exact": 0.16085806682731152,
+          "resolution_exact": 0.13132836791070776,
+          "within_bin_spread": 0.0002248722734687245,
+          "bin_residual": 0.00022487227346879024,
+          "n_groups": 166,
+          "uncertainty": 0.24258487654320987,
+          "brier_from_parts": 0.27211457545981366,
+          "aurc": 0.4449538508843038,
+          "utility": {
+            "utility": 0.749444444444445,
+            "capture": 0.6071244192049567,
+            "capture_vs_best_constant": 0.48476641841569895,
+            "u_never": 0.5861111111111111,
+            "u_all": 0.6500000000000039,
+            "u_oracle": 0.8551388888888896,
+            "tau": 0.9
+          },
+          "per_family": {
+            "arith": {
+              "n": 180,
+              "accuracy": 1.0,
+              "accuracy_ci": [
+                0.9791037501849419,
+                1.0
+              ],
+              "ece": 5.162537064506978e-14,
+              "auroc": null,
+              "auroc_ci": null,
+              "auroc_defined": false,
+              "brier": 1.922467598265916e-26,
+              "brier_ci": [
+                3.514339792932367e-27,
+                4.2806977697523603e-26
+              ],
+              "reliability": 2.6651788942408325e-27,
+              "resolution": 0.0,
+              "reliability_exact": 1.922467598265916e-26,
+              "resolution_exact": 0.0,
+              "within_bin_spread": 1.655936972025134e-26,
+              "bin_residual": 1.655949708841833e-26,
+              "n_groups": 157,
+              "uncertainty": 0.0,
+              "brier_from_parts": 1.922467598265916e-26,
+              "aurc": 0.0,
+              "utility": {
+                "utility": 1.0,
+                "capture": 0.0,
+                "capture_vs_best_constant": 0.0,
+                "u_never": 1.0,
+                "u_all": 0.649999999999999,
+                "u_oracle": 1.0,
+                "tau": 0.9
+              }
+            },
+            "csp": {
+              "n": 180,
+              "accuracy": 0.011111111111111112,
+              "accuracy_ci": [
+                0.0030523109083073845,
+                0.03960180002197173
+              ],
+              "ece": 0.846984126984127,
+              "auroc": 0.2556179775280899,
+              "auroc_ci": [
+                0.2050561797752809,
+                0.5
+              ],
+              "auroc_defined": true,
+              "brier": 0.7417916351725875,
+              "brier_ci": [
+                0.7120721844293273,
+                0.7711879566641471
+              ],
+              "reliability": 0.7300077923372383,
+              "resolution": 0.00010330057949105565,
+              "reliability_exact": 0.7312225294815308,
+              "resolution_exact": 0.0004185486299307436,
+              "within_bin_spread": 0.0008994890938525522,
+              "bin_residual": 0.0008994890938525124,
+              "n_groups": 8,
+              "uncertainty": 0.010987654320987654,
+              "brier_from_parts": 0.7417916351725877,
+              "aurc": 0.9960219508215411,
+              "utility": {
+                "utility": 0.4477777777777783,
+                "capture": 0.679343128781333,
+                "capture_vs_best_constant": 0.0,
+                "u_never": 0.011111111111111072,
+                "u_all": 0.649999999999999,
+                "u_oracle": 0.6538888888888879,
+                "tau": 0.9
+              }
+            },
+            "seq": {
+              "n": 180,
+              "accuracy": 0.3333333333333333,
+              "accuracy_ci": [
+                0.26858305601207527,
+                0.40504902725961084
+              ],
+              "ece": 0.39999999999999997,
+              "auroc": 0.75,
+              "auroc_ci": [
+                0.704,
+                0.7931034482758621
+              ],
+              "auroc_defined": true,
+              "brier": 0.3466666666666667,
+              "brier_ci": [
+                0.282,
+                0.4171111111111111
+              ],
+              "reliability": 0.18,
+              "resolution": 0.05555555555555555,
+              "reliability_exact": 0.18,
+              "resolution_exact": 0.05555555555555555,
+              "within_bin_spread": 0.0,
+              "bin_residual": 0.0,
+              "n_groups": 2,
+              "uncertainty": 0.22222222222222224,
+              "brier_from_parts": 0.3466666666666667,
+              "aurc": 0.30230756379691315,
+              "utility": {
+                "utility": 0.5500000000000014,
+                "capture": 0.5000000000000037,
+                "capture_vs_best_constant": 0.0,
+                "u_never": 0.33333333333333337,
+                "u_all": 0.649999999999999,
+                "u_oracle": 0.7666666666666662,
+                "tau": 0.9
+              }
+            },
+            "trace": {
+              "n": 180,
+              "accuracy": 1.0,
+              "accuracy_ci": [
+                0.9791037501849419,
+                1.0
+              ],
+              "ece": 0.0,
+              "auroc": null,
+              "auroc_ci": null,
+              "auroc_defined": false,
+              "brier": 0.0,
+              "brier_ci": [
+                0.0,
+                0.0
+              ],
+              "reliability": 0.0,
+              "resolution": 0.0,
+              "reliability_exact": 0.0,
+              "resolution_exact": 0.0,
+              "within_bin_spread": 0.0,
+              "bin_residual": 0.0,
+              "n_groups": 1,
+              "uncertainty": 0.0,
+              "brier_from_parts": 0.0,
+              "aurc": 0.0,
+              "utility": {
+                "utility": 1.0,
+                "capture": 0.0,
+                "capture_vs_best_constant": 0.0,
+                "u_never": 1.0,
+                "u_all": 0.649999999999999,
+                "u_oracle": 1.0,
+                "tau": 0.9
+              }
+            }
+          }
+        },
+        "ample::oracle_conf": {
+          "n": 720,
+          "accuracy": 0.5861111111111111,
+          "accuracy_ci": [
+            0.5497700543479596,
+            0.6215381434676951
+          ],
+          "ece": 0.0,
+          "auroc": 1.0,
+          "auroc_ci": [
+            1.0,
+            1.0
+          ],
+          "auroc_defined": true,
+          "brier": 0.0,
+          "brier_ci": [
+            0.0,
+            0.0
+          ],
+          "reliability": 0.0,
+          "resolution": 0.24258487654320987,
+          "reliability_exact": 0.0,
+          "resolution_exact": 0.24258487654320987,
+          "within_bin_spread": 0.0,
+          "bin_residual": 0.0,
+          "n_groups": 2,
+          "uncertainty": 0.24258487654320987,
+          "brier_from_parts": 0.0,
+          "aurc": 0.10104867481119013,
+          "utility": {
+            "utility": 0.8551388888888896,
+            "capture": 1.0,
+            "capture_vs_best_constant": 1.0,
+            "u_never": 0.5861111111111111,
+            "u_all": 0.6500000000000039,
+            "u_oracle": 0.8551388888888896,
+            "tau": 0.9
+          }
+        },
+        "ample::constant_one": {
+          "n": 720,
+          "accuracy": 0.5861111111111111,
+          "accuracy_ci": [
+            0.5497700543479596,
+            0.6215381434676951
+          ],
+          "ece": 0.41388888888888886,
+          "auroc": 0.5,
+          "auroc_ci": [
+            0.5,
+            0.5
+          ],
+          "auroc_defined": true,
+          "brier": 0.41388888888888886,
+          "brier_ci": [
+            0.37777777777777777,
+            0.44722222222222224
+          ],
+          "reliability": 0.171304012345679,
+          "resolution": 0.0,
+          "reliability_exact": 0.171304012345679,
+          "resolution_exact": 0.0,
+          "within_bin_spread": 0.0,
+          "bin_residual": 0.0,
+          "n_groups": 1,
+          "uncertainty": 0.24258487654320987,
+          "brier_from_parts": 0.41388888888888886,
+          "aurc": 0.31482091703743176,
+          "utility": {
+            "utility": 0.5861111111111111,
+            "capture": 0.0,
+            "capture_vs_best_constant": 0.0,
+            "u_never": 0.5861111111111111,
+            "u_all": 0.6500000000000039,
+            "u_oracle": 0.8551388888888896,
+            "tau": 0.9
+          }
+        },
+        "ample::constant_half": {
+          "n": 720,
+          "accuracy": 0.5861111111111111,
+          "accuracy_ci": [
+            0.5497700543479596,
+            0.6215381434676951
+          ],
+          "ece": 0.08611111111111114,
+          "auroc": 0.5,
+          "auroc_ci": [
+            0.5,
+            0.5
+          ],
+          "auroc_defined": true,
+          "brier": 0.25,
+          "brier_ci": [
+            0.25,
+            0.25
+          ],
+          "reliability": 0.007415123456790128,
+          "resolution": 0.0,
+          "reliability_exact": 0.007415123456790128,
+          "resolution_exact": 0.0,
+          "within_bin_spread": 0.0,
+          "bin_residual": 0.0,
+          "n_groups": 1,
+          "uncertainty": 0.24258487654320987,
+          "brier_from_parts": 0.25,
+          "aurc": 0.31482091703743176,
+          "utility": {
+            "utility": 0.6500000000000039,
+            "capture": 0.23748064016521778,
+            "capture_vs_best_constant": 0.0,
+            "u_never": 0.5861111111111111,
+            "u_all": 0.6500000000000039,
+            "u_oracle": 0.8551388888888896,
+            "tau": 0.9
+          }
+        },
+        "ample::inverted_conf": {
+          "n": 720,
+          "accuracy": 0.5861111111111111,
+          "accuracy_ci": [
+            0.5497700543479596,
+            0.6215381434676951
+          ],
+          "ece": 1.0,
+          "auroc": 0.0,
+          "auroc_ci": [
+            0.5,
+            0.5
+          ],
+          "auroc_defined": true,
+          "brier": 1.0,
+          "brier_ci": [
+            1.0,
+            1.0
+          ],
+          "reliability": 1.0,
+          "resolution": 0.24258487654320987,
+          "reliability_exact": 1.0,
+          "resolution_exact": 0.24258487654320987,
+          "within_bin_spread": 0.0,
+          "bin_residual": 0.0,
+          "n_groups": 2,
+          "uncertainty": 0.24258487654320987,
+          "brier_from_parts": 1.0,
+          "aurc": 0.7785974699760972,
+          "utility": {
+            "utility": 0.38097222222221605,
+            "capture": 0.0,
+            "capture_vs_best_constant": 0.0,
+            "u_never": 0.5861111111111111,
+            "u_all": 0.6500000000000039,
+            "u_oracle": 0.8551388888888896,
+            "tau": 0.9
+          }
+        }
+      }
+    },
+    "S2_easier": {
+      "desc": "更易：难度整体下移一档",
+      "families": [
+        "arith",
+        "csp",
+        "seq",
+        "trace"
+      ],
+      "difficulties": [
+        1,
+        2,
+        3
+      ],
+      "n_tasks": 720,
+      "per_solver": {
+        "tight": {
+          "n": 720,
+          "accuracy": 0.6347222222222222,
+          "accuracy_ci": [
+            0.5989216942725522,
+            0.6690927442454881
+          ],
+          "ece": 0.32288445972240465,
+          "auroc": 0.6855629789252107,
+          "auroc_ci": [
+            0.6438351067787782,
+            0.7268514107017559
+          ],
+          "auroc_defined": true,
+          "brier": 0.26592804987440577,
+          "brier_ci": [
+            0.2410032811480251,
+            0.2907779498038384
+          ],
+          "reliability": 0.15455980591762644,
+          "resolution": 0.11983267264136638,
+          "reliability_exact": 0.16991572160216722,
+          "resolution_exact": 0.13583759456726752,
+          "within_bin_spread": -0.0006490062413604558,
+          "bin_residual": -0.0006490062413604392,
+          "n_groups": 189,
+          "uncertainty": 0.23184992283950617,
+          "brier_from_parts": 0.2659280498744059,
+          "aurc": 0.33361031546970044,
+          "utility": {
+            "utility": 0.7673611111111122,
+            "capture": 0.5586428780345164,
+            "capture_vs_best_constant": 0.5282900906533246,
+            "u_never": 0.6347222222222222,
+            "u_all": 0.6500000000000039,
+            "u_oracle": 0.8721527777777782,
+            "tau": 0.95
+          },
+          "per_family": {
+            "arith": {
+              "n": 180,
+              "accuracy": 1.0,
+              "accuracy_ci": [
+                0.9791037501849419,
+                1.0
+              ],
+              "ece": 3.6235184455502e-05,
+              "auroc": null,
+              "auroc_ci": null,
+              "auroc_defined": false,
+              "brier": 8.139598341224614e-09,
+              "brier_ci": [
+                1.498381472188168e-09,
+                2.0682337214895443e-08
+              ],
+              "reliability": 1.3129885925242539e-09,
+              "resolution": 0.0,
+              "reliability_exact": 8.13959834122461e-09,
+              "resolution_exact": 0.0,
+              "within_bin_spread": 6.826609748701925e-09,
+              "bin_residual": 6.82660974870036e-09,
+              "n_groups": 174,
+              "uncertainty": 0.0,
+              "brier_from_parts": 8.13959834122461e-09,
+              "aurc": 0.0,
+              "utility": {
+                "utility": 1.0,
+                "capture": 0.0,
+                "capture_vs_best_constant": 0.0,
+                "u_never": 1.0,
+                "u_all": 0.649999999999999,
+                "u_oracle": 1.0,
+                "tau": 0.95
+              }
+            },
+            "csp": {
+              "n": 180,
+              "accuracy": 0.05,
+              "accuracy_ci": [
+                0.026524836925616916,
+                0.09228178790793545
+              ],
+              "ece": 0.6906481481481482,
+              "auroc": 0.6107862248213125,
+              "auroc_ci": [
+                0.4310487200660611,
+                0.7962962962962963
+              ],
+              "auroc_defined": true,
+              "brier": 0.5437237654320988,
+              "brier_ci": [
+                0.506304012345679,
+                0.5807608024691358
+              ],
+              "reliability": 0.49749974920343765,
+              "resolution": 0.002162174441524365,
+              "reliability_exact": 0.4986254745987807,
+              "resolution_exact": 0.002401709166681943,
+              "within_bin_spread": 0.0008861906701855685,
+              "bin_residual": 0.0008861906701854716,
+              "n_groups": 10,
+              "uncertainty": 0.0475,
+              "brier_from_parts": 0.5437237654320988,
+              "aurc": 0.9240366713754793,
+              "utility": {
+                "utility": 0.5619444444444448,
+                "capture": 0.8290598290598309,
+                "capture_vs_best_constant": 0.0,
+                "u_never": 0.050000000000000044,
+                "u_all": 0.649999999999999,
+                "u_oracle": 0.6674999999999991,
+                "tau": 0.95
+              }
+            },
+            "seq": {
+              "n": 180,
+              "accuracy": 0.7388888888888889,
+              "accuracy_ci": [
+                0.6702065350320432,
+                0.7975874789452069
+              ],
+              "ece": 0.4833333333333334,
+              "auroc": 0.2744360902255639,
+              "auroc_ci": [
+                0.2318840579710145,
+                0.31716417910447764
+              ],
+              "auroc_defined": true,
+              "brier": 0.40925925925925927,
+              "brier_ci": [
+                0.3512345679012346,
+                0.4679012345679013
+              ],
+              "reliability": 0.25041666666666673,
+              "resolution": 0.03408950617283951,
+              "reliability_exact": 0.25041666666666673,
+              "resolution_exact": 0.03408950617283951,
+              "within_bin_spread": 0.0,
+              "bin_residual": -5.551115123125783e-17,
+              "n_groups": 2,
+              "uncertainty": 0.19293209876543208,
+              "brier_from_parts": 0.4092592592592593,
+              "aurc": 0.182731379815309,
+              "utility": {
+                "utility": 0.6222222222222221,
+                "capture": 0.0,
+                "capture_vs_best_constant": 0.0,
+                "u_never": 0.7388888888888889,
+                "u_all": 0.649999999999999,
+                "u_oracle": 0.9086111111111111,
+                "tau": 0.95
+              }
+            },
+            "trace": {
+              "n": 180,
+              "accuracy": 0.75,
+              "accuracy_ci": [
+                0.681964014563061,
+                0.8075878605294099
+              ],
+              "ece": 0.12500000000000006,
+              "auroc": 0.9660082304526749,
+              "auroc_ci": [
+                0.9416460905349794,
+                0.986013986013986
+              ],
+              "auroc_defined": true,
+              "brier": 0.11072916666666666,
+              "brier_ci": [
+                0.07784461805555555,
+                0.1475130208333333
+              ],
+              "reliability": 0.06110451784152877,
+              "resolution": 0.1367582996648037,
+              "reliability_exact": 0.06349766197902162,
+              "resolution_exact": 0.14026849531235497,
+              "within_bin_spread": -0.0011170515100583699,
+              "bin_residual": -0.0011170515100583922,
+              "n_groups": 7,
+              "uncertainty": 0.1875,
+              "brier_from_parts": 0.11072916666666666,
+              "aurc": 0.04223544709661215,
+              "utility": {
+                "utility": 0.8852777777777777,
+                "capture": 0.8324786324786316,
+                "capture_vs_best_constant": 0.8324786324786316,
+                "u_never": 0.75,
+                "u_all": 0.649999999999999,
+                "u_oracle": 0.9125000000000001,
+                "tau": 0.95
+              }
+            }
+          }
+        },
+        "tight::oracle_conf": {
+          "n": 720,
+          "accuracy": 0.6347222222222222,
+          "accuracy_ci": [
+            0.5989216942725522,
+            0.6690927442454881
+          ],
+          "ece": 0.0,
+          "auroc": 1.0,
+          "auroc_ci": [
+            1.0,
+            1.0
+          ],
+          "auroc_defined": true,
+          "brier": 0.0,
+          "brier_ci": [
+            0.0,
+            0.0
+          ],
+          "reliability": 0.0,
+          "resolution": 0.23184992283950617,
+          "reliability_exact": 0.0,
+          "resolution_exact": 0.23184992283950617,
+          "within_bin_spread": 0.0,
+          "bin_residual": 0.0,
+          "n_groups": 2,
+          "uncertainty": 0.23184992283950617,
+          "brier_from_parts": 0.0,
+          "aurc": 0.07700699410217635,
+          "utility": {
+            "utility": 0.8721527777777782,
+            "capture": 1.0,
+            "capture_vs_best_constant": 1.0,
+            "u_never": 0.6347222222222222,
+            "u_all": 0.6500000000000039,
+            "u_oracle": 0.8721527777777782,
+            "tau": 0.95
+          }
+        },
+        "tight::constant_one": {
+          "n": 720,
+          "accuracy": 0.6347222222222222,
+          "accuracy_ci": [
+            0.5989216942725522,
+            0.6690927442454881
+          ],
+          "ece": 0.3652777777777778,
+          "auroc": 0.5,
+          "auroc_ci": [
+            0.5,
+            0.5
+          ],
+          "auroc_defined": true,
+          "brier": 0.36527777777777776,
+          "brier_ci": [
+            0.33055555555555555,
+            0.4013888888888889
+          ],
+          "reliability": 0.13342785493827164,
+          "resolution": 0.0,
+          "reliability_exact": 0.13342785493827164,
+          "resolution_exact": 0.0,
+          "within_bin_spread": 0.0,
+          "bin_residual": -5.551115123125783e-17,
+          "n_groups": 1,
+          "uncertainty": 0.23184992283950617,
+          "brier_from_parts": 0.3652777777777778,
+          "aurc": 0.26039718244583654,
+          "utility": {
+            "utility": 0.6347222222222222,
+            "capture": 0.0,
+            "capture_vs_best_constant": 0.0,
+            "u_never": 0.6347222222222222,
+            "u_all": 0.6500000000000039,
+            "u_oracle": 0.8721527777777782,
+            "tau": 0.95
+          }
+        },
+        "tight::constant_half": {
+          "n": 720,
+          "accuracy": 0.6347222222222222,
+          "accuracy_ci": [
+            0.5989216942725522,
+            0.6690927442454881
+          ],
+          "ece": 0.1347222222222222,
+          "auroc": 0.5,
+          "auroc_ci": [
+            0.5,
+            0.5
+          ],
+          "auroc_defined": true,
+          "brier": 0.25,
+          "brier_ci": [
+            0.25,
+            0.25
+          ],
+          "reliability": 0.018150077160493817,
+          "resolution": 0.0,
+          "reliability_exact": 0.018150077160493817,
+          "resolution_exact": 0.0,
+          "within_bin_spread": 0.0,
+          "bin_residual": 0.0,
+          "n_groups": 1,
+          "uncertainty": 0.23184992283950617,
+          "brier_from_parts": 0.25,
+          "aurc": 0.26039718244583654,
+          "utility": {
+            "utility": 0.6500000000000039,
+            "capture": 0.06434630008776143,
+            "capture_vs_best_constant": 0.0,
+            "u_never": 0.6347222222222222,
+            "u_all": 0.6500000000000039,
+            "u_oracle": 0.8721527777777782,
+            "tau": 0.95
+          }
+        },
+        "tight::inverted_conf": {
+          "n": 720,
+          "accuracy": 0.6347222222222222,
+          "accuracy_ci": [
+            0.5989216942725522,
+            0.6690927442454881
+          ],
+          "ece": 1.0,
+          "auroc": 0.0,
+          "auroc_ci": [
+            0.5,
+            0.5
+          ],
+          "auroc_defined": true,
+          "brier": 1.0,
+          "brier_ci": [
+            1.0,
+            1.0
+          ],
+          "reliability": 1.0,
+          "resolution": 0.23184992283950617,
+          "reliability_exact": 1.0,
+          "resolution_exact": 0.23184992283950617,
+          "within_bin_spread": 0.0,
+          "bin_residual": 0.0,
+          "n_groups": 2,
+          "uncertainty": 0.23184992283950617,
+          "brier_from_parts": 1.0,
+          "aurc": 0.7327075996716716,
+          "utility": {
+            "utility": 0.4125694444444379,
+            "capture": 0.0,
+            "capture_vs_best_constant": 0.0,
+            "u_never": 0.6347222222222222,
+            "u_all": 0.6500000000000039,
+            "u_oracle": 0.8721527777777782,
+            "tau": 0.95
+          }
+        },
+        "ample": {
+          "n": 720,
+          "accuracy": 0.6791666666666667,
+          "accuracy_ci": [
+            0.6441959722910203,
+            0.712235600583487
+          ],
+          "ece": 0.3369212962962873,
+          "auroc": 0.5548915978363831,
+          "auroc_ci": [
+            0.5088432463272001,
+            0.6006273305549462
+          ],
+          "auroc_defined": true,
+          "brier": 0.29327507716049384,
+          "brier_ci": [
+            0.26495640432098766,
+            0.32155979938271606
+          ],
+          "reliability": 0.1585175279446074,
+          "resolution": 0.0832344453828829,
+          "reliability_exact": 0.17623353193880154,
+          "resolution_exact": 0.10085776033386326,
+          "within_bin_spread": 9.268904321380227e-05,
+          "bin_residual": 9.268904321380056e-05,
+          "n_groups": 149,
+          "uncertainty": 0.21789930555555553,
+          "brier_from_parts": 0.29327507716049384,
+          "aurc": 0.43096140904454194,
+          "utility": {
+            "utility": 0.7500000000000007,
+            "capture": 0.3396603396603426,
+            "capture_vs_best_constant": 0.3396603396603426,
+            "u_never": 0.6791666666666667,
+            "u_all": 0.6500000000000039,
+            "u_oracle": 0.8877083333333334,
+            "tau": 0.9
+          },
+          "per_family": {
+            "arith": {
+              "n": 180,
+              "accuracy": 1.0,
+              "accuracy_ci": [
+                0.9791037501849419,
+                1.0
+              ],
+              "ece": 3.630429290524262e-14,
+              "auroc": null,
+              "auroc_ci": null,
+              "auroc_defined": false,
+              "brier": 8.139074854808118e-27,
+              "brier_ci": [
+                1.4984429329275311e-27,
+                2.068075345566834e-26
+              ],
+              "reliability": 1.3180016833496496e-27,
+              "resolution": 0.0,
+              "reliability_exact": 8.139074854808118e-27,
+              "resolution_exact": 0.0,
+              "within_bin_spread": 6.825909874883605e-27,
+              "bin_residual": 6.821073171458468e-27,
+              "n_groups": 141,
+              "uncertainty": 0.0,
+              "brier_from_parts": 8.139074854808118e-27,
+              "aurc": 0.0,
+              "utility": {
+                "utility": 1.0,
+                "capture": 0.0,
+                "capture_vs_best_constant": 0.0,
+                "u_never": 1.0,
+                "u_all": 0.649999999999999,
+                "u_oracle": 1.0,
+                "tau": 0.9
+              }
+            },
+            "csp": {
+              "n": 180,
+              "accuracy": 0.05,
+              "accuracy_ci": [
+                0.026524836925616916,
+                0.09228178790793545
+              ],
+              "ece": 0.7921296296296296,
+              "auroc": 0.43534762833008445,
+              "auroc_ci": [
+                0.23286540049545829,
+                0.6417624521072797
+              ],
+              "auroc_defined": true,
+              "brier": 0.6916188271604938,
+              "brier_ci": [
+                0.652479938271605,
+                0.7285370370370371
+              ],
+              "reliability": 0.645921963630297,
+              "resolution": 0.002173892642642643,
+              "reliability_exact": 0.6463693129403913,
+              "resolution_exact": 0.002250485779897545,
+              "within_bin_spread": 0.0003707561728395061,
+              "bin_residual": 0.0003707561728395481,
+              "n_groups": 7,
+              "uncertainty": 0.0475,
+              "brier_from_parts": 0.6916188271604938,
+              "aurc": 0.9351941757784437,
+              "utility": {
+                "utility": 0.45000000000000073,
+                "capture": 0.6477732793522288,
+                "capture_vs_best_constant": 0.0,
+                "u_never": 0.050000000000000044,
+                "u_all": 0.649999999999999,
+                "u_oracle": 0.6674999999999991,
+                "tau": 0.9
+              }
+            },
+            "seq": {
+              "n": 180,
+              "accuracy": 0.6666666666666666,
+              "accuracy_ci": [
+                0.5949509727403892,
+                0.7314169439879247
+              ],
+              "ece": 0.5555555555555556,
+              "auroc": 0.25,
+              "auroc_ci": [
+                0.2066115702479339,
+                0.2948717948717949
+              ],
+              "auroc_defined": true,
+              "brier": 0.4814814814814815,
+              "brier_ci": [
+                0.421604938271605,
+                0.5388888888888889
+              ],
+              "reliability": 0.3148148148148148,
+              "resolution": 0.05555555555555555,
+              "reliability_exact": 0.3148148148148148,
+              "resolution_exact": 0.05555555555555555,
+              "within_bin_spread": 0.0,
+              "bin_residual": 0.0,
+              "n_groups": 2,
+              "uncertainty": 0.22222222222222224,
+              "brier_from_parts": 0.4814814814814815,
+              "aurc": 0.23836051993531543,
+              "utility": {
+                "utility": 0.5499999999999999,
+                "capture": 0.0,
+                "capture_vs_best_constant": 0.0,
+                "u_never": 0.6666666666666667,
+                "u_all": 0.649999999999999,
+                "u_oracle": 0.8833333333333333,
+                "tau": 0.9
+              }
+            },
+            "trace": {
+              "n": 180,
+              "accuracy": 1.0,
+              "accuracy_ci": [
+                0.9791037501849419,
+                1.0
+              ],
+              "ece": 0.0,
+              "auroc": null,
+              "auroc_ci": null,
+              "auroc_defined": false,
+              "brier": 0.0,
+              "brier_ci": [
+                0.0,
+                0.0
+              ],
+              "reliability": 0.0,
+              "resolution": 0.0,
+              "reliability_exact": 0.0,
+              "resolution_exact": 0.0,
+              "within_bin_spread": 0.0,
+              "bin_residual": 0.0,
+              "n_groups": 1,
+              "uncertainty": 0.0,
+              "brier_from_parts": 0.0,
+              "aurc": 0.0,
+              "utility": {
+                "utility": 1.0,
+                "capture": 0.0,
+                "capture_vs_best_constant": 0.0,
+                "u_never": 1.0,
+                "u_all": 0.649999999999999,
+                "u_oracle": 1.0,
+                "tau": 0.9
+              }
+            }
+          }
+        },
+        "ample::oracle_conf": {
+          "n": 720,
+          "accuracy": 0.6791666666666667,
+          "accuracy_ci": [
+            0.6441959722910203,
+            0.712235600583487
+          ],
+          "ece": 0.0,
+          "auroc": 1.0,
+          "auroc_ci": [
+            1.0,
+            1.0
+          ],
+          "auroc_defined": true,
+          "brier": 0.0,
+          "brier_ci": [
+            0.0,
+            0.0
+          ],
+          "reliability": 0.0,
+          "resolution": 0.2178993055555556,
+          "reliability_exact": 0.0,
+          "resolution_exact": 0.2178993055555556,
+          "within_bin_spread": 0.0,
+          "bin_residual": 5.551115123125783e-17,
+          "n_groups": 2,
+          "uncertainty": 0.21789930555555553,
+          "brier_from_parts": -5.551115123125783e-17,
+          "aurc": 0.05829408269226987,
+          "utility": {
+            "utility": 0.8877083333333334,
+            "capture": 1.0,
+            "capture_vs_best_constant": 1.0,
+            "u_never": 0.6791666666666667,
+            "u_all": 0.6500000000000039,
+            "u_oracle": 0.8877083333333334,
+            "tau": 0.9
+          }
+        },
+        "ample::constant_one": {
+          "n": 720,
+          "accuracy": 0.6791666666666667,
+          "accuracy_ci": [
+            0.6441959722910203,
+            0.712235600583487
+          ],
+          "ece": 0.3208333333333333,
+          "auroc": 0.5,
+          "auroc_ci": [
+            0.5,
+            0.5
+          ],
+          "auroc_defined": true,
+          "brier": 0.32083333333333336,
+          "brier_ci": [
+            0.2875,
+            0.3541666666666667
+          ],
+          "reliability": 0.10293402777777776,
+          "resolution": 0.0,
+          "reliability_exact": 0.10293402777777776,
+          "resolution_exact": 0.0,
+          "within_bin_spread": 0.0,
+          "bin_residual": 5.551115123125783e-17,
+          "n_groups": 1,
+          "uncertainty": 0.21789930555555553,
+          "brier_from_parts": 0.3208333333333333,
+          "aurc": 0.26391771193510627,
+          "utility": {
+            "utility": 0.6791666666666667,
+            "capture": 0.0,
+            "capture_vs_best_constant": 0.0,
+            "u_never": 0.6791666666666667,
+            "u_all": 0.6500000000000039,
+            "u_oracle": 0.8877083333333334,
+            "tau": 0.9
+          }
+        },
+        "ample::constant_half": {
+          "n": 720,
+          "accuracy": 0.6791666666666667,
+          "accuracy_ci": [
+            0.6441959722910203,
+            0.712235600583487
+          ],
+          "ece": 0.1791666666666667,
+          "auroc": 0.5,
+          "auroc_ci": [
+            0.5,
+            0.5
+          ],
+          "auroc_defined": true,
+          "brier": 0.25,
+          "brier_ci": [
+            0.25,
+            0.25
+          ],
+          "reliability": 0.03210069444444445,
+          "resolution": 0.0,
+          "reliability_exact": 0.03210069444444445,
+          "resolution_exact": 0.0,
+          "within_bin_spread": 0.0,
+          "bin_residual": 0.0,
+          "n_groups": 1,
+          "uncertainty": 0.21789930555555553,
+          "brier_from_parts": 0.25,
+          "aurc": 0.26391771193510627,
+          "utility": {
+            "utility": 0.6500000000000039,
+            "capture": 0.0,
+            "capture_vs_best_constant": 0.0,
+            "u_never": 0.6791666666666667,
+            "u_all": 0.6500000000000039,
+            "u_oracle": 0.8877083333333334,
+            "tau": 0.9
+          }
+        },
+        "ample::inverted_conf": {
+          "n": 720,
+          "accuracy": 0.6791666666666667,
+          "accuracy_ci": [
+            0.6441959722910203,
+            0.712235600583487
+          ],
+          "ece": 1.0,
+          "auroc": 0.0,
+          "auroc_ci": [
+            0.5,
+            0.5
+          ],
+          "auroc_defined": true,
+          "brier": 1.0,
+          "brier_ci": [
+            1.0,
+            1.0
+          ],
+          "reliability": 1.0,
+          "resolution": 0.2178993055555556,
+          "reliability_exact": 1.0,
+          "resolution_exact": 0.2178993055555556,
+          "within_bin_spread": 0.0,
+          "bin_residual": 0.0,
+          "n_groups": 2,
+          "uncertainty": 0.21789930555555553,
+          "brier_from_parts": 1.0,
+          "aurc": 0.6850962210092638,
+          "utility": {
+            "utility": 0.44145833333332574,
+            "capture": 0.0,
+            "capture_vs_best_constant": 0.0,
+            "u_never": 0.6791666666666667,
+            "u_all": 0.6500000000000039,
+            "u_oracle": 0.8877083333333334,
+            "tau": 0.9
+          }
+        }
+      }
+    },
+    "S3_harder": {
+      "desc": "更难：难度整体上移一档",
+      "families": [
+        "arith",
+        "csp",
+        "seq",
+        "trace"
+      ],
+      "difficulties": [
+        4,
+        5,
+        6
+      ],
+      "n_tasks": 720,
+      "per_solver": {
+        "tight": {
+          "n": 720,
+          "accuracy": 0.10972222222222222,
+          "accuracy_ci": [
+            0.08893047922130215,
+            0.1346565597109725
+          ],
+          "ece": 0.45176366111896243,
+          "auroc": 0.9055372341475938,
+          "auroc_ci": [
+            0.8762147645820051,
+            0.930698766881973
+          ],
+          "auroc_defined": true,
+          "brier": 0.32511230207832537,
+          "brier_ci": [
+            0.2987867697510571,
+            0.35135728821429923
+          ],
+          "reliability": 0.255307466283199,
+          "resolution": 0.028290197068959508,
+          "reliability_exact": 0.3175020304055536,
+          "resolution_exact": 0.09007298450006833,
+          "within_bin_spread": 0.0004117766912462488,
+          "bin_residual": 0.0004117766912463683,
+          "n_groups": 218,
+          "uncertainty": 0.0976832561728395,
+          "brier_from_parts": 0.32511230207832476,
+          "aurc": 0.7382068355443833,
+          "utility": {
+            "utility": 0.5843749999999994,
+            "capture": 0.8202328093123668,
+            "capture_vs_best_constant": 0.0,
+            "u_never": 0.10972222222222228,
+            "u_all": 0.6500000000000039,
+            "u_oracle": 0.6884027777777811,
+            "tau": 0.95
+          },
+          "per_family": {
+            "arith": {
+              "n": 180,
+              "accuracy": 0.40555555555555556,
+              "accuracy_ci": [
+                0.33652509104749945,
+                0.47853308947312273
+              ],
+              "ece": 0.5942922987968376,
+              "auroc": 0.6312892075278453,
+              "auroc_ci": [
+                0.5431427125506073,
+                0.7162337662337662
+              ],
+              "auroc_defined": true,
+              "brier": 0.5942073556566009,
+              "brier_ci": [
+                0.5220333730554069,
+                0.6664155850623699
+              ],
+              "reliability": 0.3531833364092298,
+              "resolution": 0.0,
+              "reliability_exact": 0.5942073556566008,
+              "resolution_exact": 0.2410802469135803,
+              "within_bin_spread": -5.6227666209148675e-05,
+              "bin_residual": -5.6227666209163196e-05,
+              "n_groups": 180,
+              "uncertainty": 0.24108024691358024,
+              "brier_from_parts": 0.5942073556566007,
+              "aurc": 0.45980263104705144,
+              "utility": {
+                "utility": 0.40555555555555556,
+                "capture": 0.0,
+                "capture_vs_best_constant": 0.0,
+                "u_never": 0.40555555555555556,
+                "u_all": 0.649999999999999,
+                "u_oracle": 0.791944444444444,
+                "tau": 0.95
+              }
+            },
+            "csp": {
+              "n": 180,
+              "accuracy": 0.0,
+              "accuracy_ci": [
+                0.0,
+                0.02089624981505818
+              ],
+              "ece": 0.6508708112874779,
+              "auroc": null,
+              "auroc_ci": null,
+              "auroc_defined": false,
+              "brier": 0.4562184840499986,
+              "brier_ci": [
+                0.423151100718065,
+                0.4898555165378909
+              ],
+              "reliability": 0.455773267875521,
+              "resolution": 0.0,
+              "reliability_exact": 0.45621848404999865,
+              "resolution_exact": 0.0,
+              "within_bin_spread": 0.0004452161744775693,
+              "bin_residual": 0.00044521617447756956,
+              "n_groups": 21,
+              "uncertainty": 0.0,
+              "brier_from_parts": 0.45621848404999865,
+              "aurc": 1.0,
+              "utility": {
+                "utility": 0.6319444444444436,
+                "capture": 0.9722222222222224,
+                "capture_vs_best_constant": 0.0,
+                "u_never": 0.0,
+                "u_all": 0.649999999999999,
+                "u_oracle": 0.649999999999999,
+                "tau": 0.95
+              }
+            },
+            "seq": {
+              "n": 180,
+              "accuracy": 0.0,
+              "accuracy_ci": [
+                0.0,
+                0.02089624981505818
+              ],
+              "ece": 0.2,
+              "auroc": null,
+              "auroc_ci": null,
+              "auroc_defined": false,
+              "brier": 0.04000000000000001,
+              "brier_ci": [
+                0.04000000000000001,
+                0.04000000000000001
+              ],
+              "reliability": 0.04000000000000001,
+              "resolution": 0.0,
+              "reliability_exact": 0.04000000000000001,
+              "resolution_exact": 0.0,
+              "within_bin_spread": 0.0,
+              "bin_residual": 0.0,
+              "n_groups": 1,
+              "uncertainty": 0.0,
+              "brier_from_parts": 0.04000000000000001,
+              "aurc": 1.0,
+              "utility": {
+                "utility": 0.649999999999999,
+                "capture": 1.0,
+                "capture_vs_best_constant": 0.0,
+                "u_never": 0.0,
+                "u_all": 0.649999999999999,
+                "u_oracle": 0.649999999999999,
+                "tau": 0.95
+              }
+            },
+            "trace": {
+              "n": 180,
+              "accuracy": 0.03333333333333333,
+              "accuracy_ci": [
+                0.015364581427704496,
+                0.07080525173301648
+              ],
+              "ece": 0.3618915343915344,
+              "auroc": 0.7576628352490421,
+              "auroc_ci": [
+                0.6222857142857143,
+                0.8817142857142857
+              ],
+              "auroc_defined": true,
+              "brier": 0.21002336860670193,
+              "brier_ci": [
+                0.18314369173595363,
+                0.2376569822373394
+              ],
+              "reliability": 0.17847992017642728,
+              "resolution": 0.0012682379349046016,
+              "reliability_exact": 0.18111794532627865,
+              "resolution_exact": 0.0033167989417989437,
+              "within_bin_spread": 0.0005894641429570341,
+              "bin_residual": 0.0005894641429570469,
+              "n_groups": 23,
+              "uncertainty": 0.03222222222222222,
+              "brier_from_parts": 0.2100233686067019,
+              "aurc": 0.9480514910519515,
+              "utility": {
+                "utility": 0.649999999999999,
+                "capture": 0.9814323607427055,
+                "capture_vs_best_constant": 0.0,
+                "u_never": 0.033333333333333326,
+                "u_all": 0.649999999999999,
+                "u_oracle": 0.6616666666666657,
+                "tau": 0.95
+              }
+            }
+          }
+        },
+        "tight::oracle_conf": {
+          "n": 720,
+          "accuracy": 0.10972222222222222,
+          "accuracy_ci": [
+            0.08893047922130215,
+            0.1346565597109725
+          ],
+          "ece": 0.0,
+          "auroc": 1.0,
+          "auroc_ci": [
+            1.0,
+            1.0
+          ],
+          "auroc_defined": true,
+          "brier": 0.0,
+          "brier_ci": [
+            0.0,
+            0.0
+          ],
+          "reliability": 0.0,
+          "resolution": 0.09768325617283949,
+          "reliability_exact": 0.0,
+          "resolution_exact": 0.09768325617283949,
+          "within_bin_spread": 0.0,
+          "bin_residual": -1.3877787807814457e-17,
+          "n_groups": 2,
+          "uncertainty": 0.0976832561728395,
+          "brier_from_parts": 1.3877787807814457e-17,
+          "aurc": 0.6484300435401312,
+          "utility": {
+            "utility": 0.6884027777777811,
+            "capture": 1.0,
+            "capture_vs_best_constant": 1.0,
+            "u_never": 0.10972222222222228,
+            "u_all": 0.6500000000000039,
+            "u_oracle": 0.6884027777777811,
+            "tau": 0.95
+          }
+        },
+        "tight::constant_one": {
+          "n": 720,
+          "accuracy": 0.10972222222222222,
+          "accuracy_ci": [
+            0.08893047922130215,
+            0.1346565597109725
+          ],
+          "ece": 0.8902777777777777,
+          "auroc": 0.5,
+          "auroc_ci": [
+            0.5,
+            0.5
+          ],
+          "auroc_defined": true,
+          "brier": 0.8902777777777777,
+          "brier_ci": [
+            0.8666666666666667,
+            0.9138888888888889
+          ],
+          "reliability": 0.7925945216049382,
+          "resolution": 0.0,
+          "reliability_exact": 0.7925945216049382,
+          "resolution_exact": 0.0,
+          "within_bin_spread": 0.0,
+          "bin_residual": 1.1102230246251565e-16,
+          "n_groups": 1,
+          "uncertainty": 0.0976832561728395,
+          "brier_from_parts": 0.8902777777777776,
+          "aurc": 0.672566443309082,
+          "utility": {
+            "utility": 0.10972222222222228,
+            "capture": 0.0,
+            "capture_vs_best_constant": 0.0,
+            "u_never": 0.10972222222222228,
+            "u_all": 0.6500000000000039,
+            "u_oracle": 0.6884027777777811,
+            "tau": 0.95
+          }
+        },
+        "tight::constant_half": {
+          "n": 720,
+          "accuracy": 0.10972222222222222,
+          "accuracy_ci": [
+            0.08893047922130215,
+            0.1346565597109725
+          ],
+          "ece": 0.3902777777777778,
+          "auroc": 0.5,
+          "auroc_ci": [
+            0.5,
+            0.5
+          ],
+          "auroc_defined": true,
+          "brier": 0.25,
+          "brier_ci": [
+            0.25,
+            0.25
+          ],
+          "reliability": 0.15231674382716048,
+          "resolution": 0.0,
+          "reliability_exact": 0.15231674382716048,
+          "resolution_exact": 0.0,
+          "within_bin_spread": 0.0,
+          "bin_residual": 0.0,
+          "n_groups": 1,
+          "uncertainty": 0.0976832561728395,
+          "brier_from_parts": 0.25,
+          "aurc": 0.672566443309082,
+          "utility": {
+            "utility": 0.6500000000000039,
+            "capture": 0.933637345493821,
+            "capture_vs_best_constant": 0.0,
+            "u_never": 0.10972222222222228,
+            "u_all": 0.6500000000000039,
+            "u_oracle": 0.6884027777777811,
+            "tau": 0.95
+          }
+        },
+        "tight::inverted_conf": {
+          "n": 720,
+          "accuracy": 0.10972222222222222,
+          "accuracy_ci": [
+            0.08893047922130215,
+            0.1346565597109725
+          ],
+          "ece": 1.0,
+          "auroc": 0.0,
+          "auroc_ci": [
+            0.5,
+            0.5
+          ],
+          "auroc_defined": true,
+          "brier": 1.0,
+          "brier_ci": [
+            1.0,
+            1.0
+          ],
+          "reliability": 1.0,
+          "resolution": 0.09768325617283949,
+          "reliability_exact": 1.0,
+          "resolution_exact": 0.09768325617283949,
+          "within_bin_spread": 0.0,
+          "bin_residual": 0.0,
+          "n_groups": 2,
+          "uncertainty": 0.0976832561728395,
+          "brier_from_parts": 1.0,
+          "aurc": 0.9936712650902683,
+          "utility": {
+            "utility": 0.07131944444444416,
+            "capture": 0.0,
+            "capture_vs_best_constant": 0.0,
+            "u_never": 0.10972222222222228,
+            "u_all": 0.6500000000000039,
+            "u_oracle": 0.6884027777777811,
+            "tau": 0.95
+          }
+        },
+        "ample": {
+          "n": 720,
+          "accuracy": 0.5,
+          "accuracy_ci": [
+            0.4635746019591174,
+            0.5364253980408826
+          ],
+          "ece": 0.2634424603174223,
+          "auroc": 0.9104166666666667,
+          "auroc_ci": [
+            0.884019305019305,
+            0.9339170064763732
+          ],
+          "auroc_defined": true,
+          "brier": 0.19528392131029368,
+          "brier_ci": [
+            0.17190422388091037,
+            0.21983503882520086
+          ],
+          "reliability": 0.14188180945492598,
+          "resolution": 0.1966501240694789,
+          "reliability_exact": 0.14707764328338782,
+          "resolution_exact": 0.201793721973094,
+          "within_bin_spread": 5.223592484655281e-05,
+          "bin_residual": 5.223592484659978e-05,
+          "n_groups": 177,
+          "uncertainty": 0.25,
+          "brier_from_parts": 0.19528392131029382,
+          "aurc": 0.3431405307413693,
+          "utility": {
+            "utility": 0.7861805555555572,
+            "capture": 0.8805555555555574,
+            "capture_vs_best_constant": 0.7781746031746025,
+            "u_never": 0.5,
+            "u_all": 0.6500000000000039,
+            "u_oracle": 0.8250000000000012,
+            "tau": 0.9
+          },
+          "per_family": {
+            "arith": {
+              "n": 180,
+              "accuracy": 1.0,
+              "accuracy_ci": [
+                0.9791037501849419,
+                1.0
+              ],
+              "ece": 1.5210055437364645e-13,
+              "auroc": null,
+              "auroc_ci": null,
+              "auroc_defined": false,
+              "brier": 5.584662230700526e-25,
+              "brier_ci": [
+                2.815572746935388e-26,
+                1.59953724854999e-24
+              ],
+              "reliability": 2.313457864077058e-26,
+              "resolution": 0.0,
+              "reliability_exact": 5.584662230700526e-25,
+              "resolution_exact": 0.0,
+              "within_bin_spread": 5.353305186590318e-25,
+              "bin_residual": 5.35331644429282e-25,
+              "n_groups": 165,
+              "uncertainty": 0.0,
+              "brier_from_parts": 5.584662230700526e-25,
+              "aurc": 0.0,
+              "utility": {
+                "utility": 1.0,
+                "capture": 0.0,
+                "capture_vs_best_constant": 0.0,
+                "u_never": 1.0,
+                "u_all": 0.649999999999999,
+                "u_oracle": 1.0,
+                "tau": 0.9
+              }
+            },
+            "csp": {
+              "n": 180,
+              "accuracy": 0.0,
+              "accuracy_ci": [
+                0.0,
+                0.02089624981505818
+              ],
+              "ece": 0.8537698412698412,
+              "auroc": null,
+              "auroc_ci": null,
+              "auroc_defined": false,
+              "brier": 0.7411356852411746,
+              "brier_ci": [
+                0.7132539551314352,
+                0.7677738803854874
+              ],
+              "reliability": 0.7409267415418209,
+              "resolution": 0.0,
+              "reliability_exact": 0.7411356852411746,
+              "resolution_exact": 0.0,
+              "within_bin_spread": 0.00020894369935375227,
+              "bin_residual": 0.00020894369935364754,
+              "n_groups": 11,
+              "uncertainty": 0.0,
+              "brier_from_parts": 0.7411356852411746,
+              "aurc": 1.0,
+              "utility": {
+                "utility": 0.4947222222222234,
+                "capture": 0.7611111111111141,
+                "capture_vs_best_constant": 0.0,
+                "u_never": 0.0,
+                "u_all": 0.649999999999999,
+                "u_oracle": 0.649999999999999,
+                "tau": 0.9
+              }
+            },
+            "seq": {
+              "n": 180,
+              "accuracy": 0.0,
+              "accuracy_ci": [
+                0.0,
+                0.02089624981505818
+              ],
+              "ece": 0.2,
+              "auroc": null,
+              "auroc_ci": null,
+              "auroc_defined": false,
+              "brier": 0.04000000000000001,
+              "brier_ci": [
+                0.04000000000000001,
+                0.04000000000000001
+              ],
+              "reliability": 0.04000000000000001,
+              "resolution": 0.0,
+              "reliability_exact": 0.04000000000000001,
+              "resolution_exact": 0.0,
+              "within_bin_spread": 0.0,
+              "bin_residual": 0.0,
+              "n_groups": 1,
+              "uncertainty": 0.0,
+              "brier_from_parts": 0.04000000000000001,
+              "aurc": 1.0,
+              "utility": {
+                "utility": 0.649999999999999,
+                "capture": 1.0,
+                "capture_vs_best_constant": 0.0,
+                "u_never": 0.0,
+                "u_all": 0.649999999999999,
+                "u_oracle": 0.649999999999999,
+                "tau": 0.9
+              }
+            },
+            "trace": {
+              "n": 180,
+              "accuracy": 1.0,
+              "accuracy_ci": [
+                0.9791037501849419,
+                1.0
+              ],
+              "ece": 0.0,
+              "auroc": null,
+              "auroc_ci": null,
+              "auroc_defined": false,
+              "brier": 0.0,
+              "brier_ci": [
+                0.0,
+                0.0
+              ],
+              "reliability": 0.0,
+              "resolution": 0.0,
+              "reliability_exact": 0.0,
+              "resolution_exact": 0.0,
+              "within_bin_spread": 0.0,
+              "bin_residual": 0.0,
+              "n_groups": 1,
+              "uncertainty": 0.0,
+              "brier_from_parts": 0.0,
+              "aurc": 0.0,
+              "utility": {
+                "utility": 1.0,
+                "capture": 0.0,
+                "capture_vs_best_constant": 0.0,
+                "u_never": 1.0,
+                "u_all": 0.649999999999999,
+                "u_oracle": 1.0,
+                "tau": 0.9
+              }
+            }
+          }
+        },
+        "ample::oracle_conf": {
+          "n": 720,
+          "accuracy": 0.5,
+          "accuracy_ci": [
+            0.4635746019591174,
+            0.5364253980408826
+          ],
+          "ece": 0.0,
+          "auroc": 1.0,
+          "auroc_ci": [
+            1.0,
+            1.0
+          ],
+          "auroc_defined": true,
+          "brier": 0.0,
+          "brier_ci": [
+            0.0,
+            0.0
+          ],
+          "reliability": 0.0,
+          "resolution": 0.25,
+          "reliability_exact": 0.0,
+          "resolution_exact": 0.25,
+          "within_bin_spread": 0.0,
+          "bin_residual": 0.0,
+          "n_groups": 2,
+          "uncertainty": 0.25,
+          "brier_from_parts": 0.0,
+          "aurc": 0.1537733908159389,
+          "utility": {
+            "utility": 0.8250000000000012,
+            "capture": 1.0,
+            "capture_vs_best_constant": 1.0,
+            "u_never": 0.5,
+            "u_all": 0.6500000000000039,
+            "u_oracle": 0.8250000000000012,
+            "tau": 0.9
+          }
+        },
+        "ample::constant_one": {
+          "n": 720,
+          "accuracy": 0.5,
+          "accuracy_ci": [
+            0.4635746019591174,
+            0.5364253980408826
+          ],
+          "ece": 0.5,
+          "auroc": 0.5,
+          "auroc_ci": [
+            0.5,
+            0.5
+          ],
+          "auroc_defined": true,
+          "brier": 0.5,
+          "brier_ci": [
+            0.4638888888888889,
+            0.5347222222222222
+          ],
+          "reliability": 0.25,
+          "resolution": 0.0,
+          "reliability_exact": 0.25,
+          "resolution_exact": 0.0,
+          "within_bin_spread": 0.0,
+          "bin_residual": 0.0,
+          "n_groups": 1,
+          "uncertainty": 0.25,
+          "brier_from_parts": 0.5,
+          "aurc": 0.3695346772380873,
+          "utility": {
+            "utility": 0.5,
+            "capture": 0.0,
+            "capture_vs_best_constant": 0.0,
+            "u_never": 0.5,
+            "u_all": 0.6500000000000039,
+            "u_oracle": 0.8250000000000012,
+            "tau": 0.9
+          }
+        },
+        "ample::constant_half": {
+          "n": 720,
+          "accuracy": 0.5,
+          "accuracy_ci": [
+            0.4635746019591174,
+            0.5364253980408826
+          ],
+          "ece": 0.0,
+          "auroc": 0.5,
+          "auroc_ci": [
+            0.5,
+            0.5
+          ],
+          "auroc_defined": true,
+          "brier": 0.25,
+          "brier_ci": [
+            0.25,
+            0.25
+          ],
+          "reliability": 0.0,
+          "resolution": 0.0,
+          "reliability_exact": 0.0,
+          "resolution_exact": 0.0,
+          "within_bin_spread": 0.0,
+          "bin_residual": 0.0,
+          "n_groups": 1,
+          "uncertainty": 0.25,
+          "brier_from_parts": 0.25,
+          "aurc": 0.3695346772380873,
+          "utility": {
+            "utility": 0.6500000000000039,
+            "capture": 0.4615384615384719,
+            "capture_vs_best_constant": 0.0,
+            "u_never": 0.5,
+            "u_all": 0.6500000000000039,
+            "u_oracle": 0.8250000000000012,
+            "tau": 0.9
+          }
+        },
+        "ample::inverted_conf": {
+          "n": 720,
+          "accuracy": 0.5,
+          "accuracy_ci": [
+            0.4635746019591174,
+            0.5364253980408826
+          ],
+          "ece": 1.0,
+          "auroc": 0.0,
+          "auroc_ci": [
+            0.5,
+            0.5
+          ],
+          "auroc_defined": true,
+          "brier": 1.0,
+          "brier_ci": [
+            1.0,
+            1.0
+          ],
+          "reliability": 1.0,
+          "resolution": 0.25,
+          "reliability_exact": 1.0,
+          "resolution_exact": 0.25,
+          "within_bin_spread": 0.0,
+          "bin_residual": 0.0,
+          "n_groups": 2,
+          "uncertainty": 0.25,
+          "brier_from_parts": 1.0,
+          "aurc": 0.846226609184061,
+          "utility": {
+            "utility": 0.32499999999999407,
+            "capture": 0.0,
+            "capture_vs_best_constant": 0.0,
+            "u_never": 0.5,
+            "u_all": 0.6500000000000039,
+            "u_oracle": 0.8250000000000012,
+            "tau": 0.9
+          }
+        }
+      }
+    },
+    "S4_bimodal": {
+      "desc": "双峰：极易与极难混合（检验校准是否非单调退化）",
+      "families": [
+        "arith",
+        "csp",
+        "seq",
+        "trace"
+      ],
+      "difficulties": [
+        1,
+        2,
+        6
+      ],
+      "n_tasks": 720,
+      "per_solver": {
+        "tight": {
+          "n": 720,
+          "accuracy": 0.5138888888888888,
+          "accuracy_ci": [
+            0.4774037603113258,
+            0.55022659417507
+          ],
+          "ece": 0.3470259367158839,
+          "auroc": 0.8237760617760618,
+          "auroc_ci": [
+            0.7932622936905377,
+            0.8562701287467466
+          ],
+          "auroc_defined": true,
+          "brier": 0.2676114916583102,
+          "brier_ci": [
+            0.2428459621048106,
+            0.2918719463957903
+          ],
+          "reliability": 0.16394720877137656,
+          "resolution": 0.1469993827015196,
+          "reliability_exact": 0.2303599430479087,
+          "resolution_exact": 0.21255555015503053,
+          "within_bin_spread": 0.0008565668230211363,
+          "bin_residual": 0.0008565668230211543,
+          "n_groups": 198,
+          "uncertainty": 0.2498070987654321,
+          "brier_from_parts": 0.2676114916583103,
+          "aurc": 0.3147008190095673,
+          "utility": {
+            "utility": 0.7242361111111136,
+            "capture": 0.6657142857142916,
+            "capture_vs_best_constant": 0.4127413127413116,
+            "u_never": 0.5138888888888888,
+            "u_all": 0.6500000000000039,
+            "u_oracle": 0.8298611111111122,
+            "tau": 0.95
+          },
+          "per_family": {
+            "arith": {
+              "n": 180,
+              "accuracy": 0.6777777777777778,
+              "accuracy_ci": [
+                0.6064061215775903,
+                0.7417196562659446
+              ],
+              "ece": 0.32216018425330617,
+              "auroc": 0.827303561334087,
+              "auroc_ci": [
+                0.7646545454545455,
+                0.8846364133406233
+              ],
+              "auroc_defined": true,
+              "brier": 0.32214175482506074,
+              "brier_ci": [
+                0.2555103310833776,
+                0.3888372505044494
+              ],
+              "reliability": 0.10378718431812418,
+              "resolution": 0.0,
+              "reliability_exact": 0.3221417548250608,
+              "resolution_exact": 0.21839506172839487,
+              "within_bin_spread": -4.0491221458550746e-05,
+              "bin_residual": -4.049122145849404e-05,
+              "n_groups": 175,
+              "uncertainty": 0.21839506172839504,
+              "brier_from_parts": 0.32214175482506097,
+              "aurc": 0.11921799147707028,
+              "utility": {
+                "utility": 0.6777777777777778,
+                "capture": 0.0,
+                "capture_vs_best_constant": 0.0,
+                "u_never": 0.6777777777777778,
+                "u_all": 0.649999999999999,
+                "u_oracle": 0.8872222222222221,
+                "tau": 0.95
+              }
+            },
+            "csp": {
+              "n": 180,
+              "accuracy": 0.044444444444444446,
+              "accuracy_ci": [
+                0.022689821193114634,
+                0.08523787308282726
+              ],
+              "ece": 0.6881790123456789,
+              "auroc": 0.6199127906976745,
+              "auroc_ci": [
+                0.40350877192982454,
+                0.8433866279069767
+              ],
+              "auroc_defined": true,
+              "brier": 0.5358400205761318,
+              "brier_ci": [
+                0.49883076131687243,
+                0.5717976680384088
+              ],
+              "reliability": 0.49289482537039425,
+              "resolution": 0.0011628540305010891,
+              "reliability_exact": 0.4953578883292935,
+              "resolution_exact": 0.0019870035556310063,
+              "within_bin_spread": 0.0016389134337694,
+              "bin_residual": 0.00163891343376954,
+              "n_groups": 13,
+              "uncertainty": 0.04246913580246914,
+              "brier_from_parts": 0.5358400205761316,
+              "aurc": 0.9335554005822323,
+              "utility": {
+                "utility": 0.5691666666666673,
+                "capture": 0.8448121645796087,
+                "capture_vs_best_constant": 0.0,
+                "u_never": 0.0444444444444444,
+                "u_all": 0.649999999999999,
+                "u_oracle": 0.6655555555555546,
+                "tau": 0.95
+              }
+            },
+            "seq": {
+              "n": 180,
+              "accuracy": 0.6666666666666666,
+              "accuracy_ci": [
+                0.5949509727403892,
+                0.7314169439879247
+              ],
+              "ece": 0.2888888888888889,
+              "auroc": 1.0,
+              "auroc_ci": [
+                1.0,
+                1.0
+              ],
+              "auroc_defined": true,
+              "brier": 0.16148148148148153,
+              "brier_ci": [
+                0.13274074074074077,
+                0.1908888888888889
+              ],
+              "reliability": 0.1614814814814815,
+              "resolution": 0.2222222222222222,
+              "reliability_exact": 0.1614814814814815,
+              "resolution_exact": 0.2222222222222222,
+              "within_bin_spread": 0.0,
+              "bin_residual": 0.0,
+              "n_groups": 3,
+              "uncertainty": 0.22222222222222224,
+              "brier_from_parts": 0.16148148148148153,
+              "aurc": 0.06394704386159773,
+              "utility": {
+                "utility": 0.7666666666666662,
+                "capture": 0.4615384615384591,
+                "capture_vs_best_constant": 0.4615384615384591,
+                "u_never": 0.6666666666666667,
+                "u_all": 0.649999999999999,
+                "u_oracle": 0.8833333333333333,
+                "tau": 0.95
+              }
+            },
+            "trace": {
+              "n": 180,
+              "accuracy": 0.6666666666666666,
+              "accuracy_ci": [
+                0.5949509727403892,
+                0.7314169439879247
+              ],
+              "ece": 0.10924603174603176,
+              "auroc": 1.0,
+              "auroc_ci": [
+                1.0,
+                1.0
+              ],
+              "auroc_defined": true,
+              "brier": 0.05098270975056689,
+              "brier_ci": [
+                0.035545351473922904,
+                0.0677624716553288
+              ],
+              "reliability": 0.050879679120325386,
+              "resolution": 0.22222222222222227,
+              "reliability_exact": 0.05098270975056689,
+              "resolution_exact": 0.22222222222222218,
+              "within_bin_spread": 0.00010303063024151458,
+              "bin_residual": 0.00010303063024154346,
+              "n_groups": 11,
+              "uncertainty": 0.22222222222222224,
+              "brier_from_parts": 0.05098270975056693,
+              "aurc": 0.06394704386159773,
+              "utility": {
+                "utility": 0.8833333333333333,
+                "capture": 1.0,
+                "capture_vs_best_constant": 1.0,
+                "u_never": 0.6666666666666667,
+                "u_all": 0.649999999999999,
+                "u_oracle": 0.8833333333333333,
+                "tau": 0.95
+              }
+            }
+          }
+        },
+        "tight::oracle_conf": {
+          "n": 720,
+          "accuracy": 0.5138888888888888,
+          "accuracy_ci": [
+            0.4774037603113258,
+            0.55022659417507
+          ],
+          "ece": 0.0,
+          "auroc": 1.0,
+          "auroc_ci": [
+            1.0,
+            1.0
+          ],
+          "auroc_defined": true,
+          "brier": 0.0,
+          "brier_ci": [
+            0.0,
+            0.0
+          ],
+          "reliability": 0.0,
+          "resolution": 0.24980709876543206,
+          "reliability_exact": 0.0,
+          "resolution_exact": 0.24980709876543206,
+          "within_bin_spread": 0.0,
+          "bin_residual": -5.551115123125783e-17,
+          "n_groups": 2,
+          "uncertainty": 0.2498070987654321,
+          "brier_from_parts": 5.551115123125783e-17,
+          "aurc": 0.14432785201498138,
+          "utility": {
+            "utility": 0.8298611111111122,
+            "capture": 1.0,
+            "capture_vs_best_constant": 1.0,
+            "u_never": 0.5138888888888888,
+            "u_all": 0.6500000000000039,
+            "u_oracle": 0.8298611111111122,
+            "tau": 0.95
+          }
+        },
+        "tight::constant_one": {
+          "n": 720,
+          "accuracy": 0.5138888888888888,
+          "accuracy_ci": [
+            0.4774037603113258,
+            0.55022659417507
+          ],
+          "ece": 0.48611111111111116,
+          "auroc": 0.5,
+          "auroc_ci": [
+            0.5,
+            0.5
+          ],
+          "auroc_defined": true,
+          "brier": 0.4861111111111111,
+          "brier_ci": [
+            0.45,
+            0.5222222222222223
+          ],
+          "reliability": 0.23630401234567905,
+          "resolution": 0.0,
+          "reliability_exact": 0.23630401234567905,
+          "resolution_exact": 0.0,
+          "within_bin_spread": 0.0,
+          "bin_residual": -5.551115123125783e-17,
+          "n_groups": 1,
+          "uncertainty": 0.2498070987654321,
+          "brier_from_parts": 0.48611111111111116,
+          "aurc": 0.3972825853289895,
+          "utility": {
+            "utility": 0.5138888888888888,
+            "capture": 0.0,
+            "capture_vs_best_constant": 0.0,
+            "u_never": 0.5138888888888888,
+            "u_all": 0.6500000000000039,
+            "u_oracle": 0.8298611111111122,
+            "tau": 0.95
+          }
+        },
+        "tight::constant_half": {
+          "n": 720,
+          "accuracy": 0.5138888888888888,
+          "accuracy_ci": [
+            0.4774037603113258,
+            0.55022659417507
+          ],
+          "ece": 0.01388888888888884,
+          "auroc": 0.5,
+          "auroc_ci": [
+            0.5,
+            0.5
+          ],
+          "auroc_defined": true,
+          "brier": 0.25,
+          "brier_ci": [
+            0.25,
+            0.25
+          ],
+          "reliability": 0.00019290123456789987,
+          "resolution": 0.0,
+          "reliability_exact": 0.00019290123456789987,
+          "resolution_exact": 0.0,
+          "within_bin_spread": 0.0,
+          "bin_residual": 0.0,
+          "n_groups": 1,
+          "uncertainty": 0.2498070987654321,
+          "brier_from_parts": 0.25,
+          "aurc": 0.3972825853289895,
+          "utility": {
+            "utility": 0.6500000000000039,
+            "capture": 0.4307692307692418,
+            "capture_vs_best_constant": 0.0,
+            "u_never": 0.5138888888888888,
+            "u_all": 0.6500000000000039,
+            "u_oracle": 0.8298611111111122,
+            "tau": 0.95
+          }
+        },
+        "tight::inverted_conf": {
+          "n": 720,
+          "accuracy": 0.5138888888888888,
+          "accuracy_ci": [
+            0.4774037603113258,
+            0.55022659417507
+          ],
+          "ece": 1.0,
+          "auroc": 0.0,
+          "auroc_ci": [
+            0.5,
+            0.5
+          ],
+          "auroc_defined": true,
+          "brier": 1.0,
+          "brier_ci": [
+            1.0,
+            1.0
+          ],
+          "reliability": 1.0,
+          "resolution": 0.24980709876543206,
+          "reliability_exact": 1.0,
+          "resolution_exact": 0.24980709876543206,
+          "within_bin_spread": 0.0,
+          "bin_residual": 0.0,
+          "n_groups": 2,
+          "uncertainty": 0.2498070987654321,
+          "brier_from_parts": 1.0,
+          "aurc": 0.8363952187806593,
+          "utility": {
+            "utility": 0.33402777777777015,
+            "capture": 0.0,
+            "capture_vs_best_constant": 0.0,
+            "u_never": 0.5138888888888888,
+            "u_all": 0.6500000000000039,
+            "u_oracle": 0.8298611111111122,
+            "tau": 0.95
+          }
+        },
+        "ample": {
+          "n": 720,
+          "accuracy": 0.6777777777777778,
+          "accuracy_ci": [
+            0.6427760114625837,
+            0.7108925259632841
+          ],
+          "ece": 0.26631944444442895,
+          "auroc": 0.7992907362916902,
+          "auroc_ci": [
+            0.7626365431015574,
+            0.8364001814317097
+          ],
+          "auroc_defined": true,
+          "brier": 0.20539218964334707,
+          "brier_ci": [
+            0.18319697359396436,
+            0.22777734910836764
+          ],
+          "reliability": 0.1487497232522213,
+          "resolution": 0.16220694894437035,
+          "reliability_exact": 0.1523423391590129,
+          "resolution_exact": 0.16534521124406087,
+          "within_bin_spread": 0.0004543536071010036,
+          "bin_residual": 0.0004543536071010823,
+          "n_groups": 166,
+          "uncertainty": 0.21839506172839504,
+          "brier_from_parts": 0.20539218964334707,
+          "aurc": 0.2664624700580581,
+          "utility": {
+            "utility": 0.8204166666666678,
+            "capture": 0.6810344827586255,
+            "capture_vs_best_constant": 0.6810344827586255,
+            "u_never": 0.6777777777777778,
+            "u_all": 0.6500000000000039,
+            "u_oracle": 0.8872222222222224,
+            "tau": 0.9
+          },
+          "per_family": {
+            "arith": {
+              "n": 180,
+              "accuracy": 1.0,
+              "accuracy_ci": [
+                0.9791037501849419,
+                1.0
+              ],
+              "ece": 6.206146707654625e-14,
+              "auroc": null,
+              "auroc_ci": null,
+              "auroc_defined": false,
+              "brier": 5.318674724236588e-26,
+              "brier_ci": [
+                4.3612455218156e-27,
+                1.4773827797640296e-25
+              ],
+              "reliability": 3.851625695693234e-27,
+              "resolution": 0.0,
+              "reliability_exact": 5.318674724236585e-26,
+              "resolution_exact": 0.0,
+              "within_bin_spread": 4.933780107160504e-26,
+              "bin_residual": 4.933512154667264e-26,
+              "n_groups": 155,
+              "uncertainty": 0.0,
+              "brier_from_parts": 5.318674724236585e-26,
+              "aurc": 0.0,
+              "utility": {
+                "utility": 1.0,
+                "capture": 0.0,
+                "capture_vs_best_constant": 0.0,
+                "u_never": 1.0,
+                "u_all": 0.649999999999999,
+                "u_oracle": 1.0,
+                "tau": 0.9
+              }
+            },
+            "csp": {
+              "n": 180,
+              "accuracy": 0.044444444444444446,
+              "accuracy_ci": [
+                0.022689821193114634,
+                0.08523787308282726
+              ],
+              "ece": 0.7763888888888888,
+              "auroc": 0.4887354651162791,
+              "auroc_ci": [
+                0.24285714285714285,
+                0.735217673814165
+              ],
+              "auroc_defined": true,
+              "brier": 0.6600872770919067,
+              "brier_ci": [
+                0.624210219478738,
+                0.6944348422496571
+              ],
+              "reliability": 0.6164178444278471,
+              "resolution": 0.0006171175668031013,
+              "reliability_exact": 0.6191138123379542,
+              "resolution_exact": 0.0014956710485165767,
+              "within_bin_spread": 0.00181741442839354,
+              "bin_residual": 0.00181741442839356,
+              "n_groups": 9,
+              "uncertainty": 0.04246913580246914,
+              "brier_from_parts": 0.6600872770919067,
+              "aurc": 0.9427862237025604,
+              "utility": {
+                "utility": 0.5150000000000008,
+                "capture": 0.7576028622540275,
+                "capture_vs_best_constant": 0.0,
+                "u_never": 0.0444444444444444,
+                "u_all": 0.649999999999999,
+                "u_oracle": 0.6655555555555546,
+                "tau": 0.9
+              }
+            },
+            "seq": {
+              "n": 180,
+              "accuracy": 0.6666666666666666,
+              "accuracy_ci": [
+                0.5949509727403892,
+                0.7314169439879247
+              ],
+              "ece": 0.2888888888888889,
+              "auroc": 1.0,
+              "auroc_ci": [
+                1.0,
+                1.0
+              ],
+              "auroc_defined": true,
+              "brier": 0.16148148148148153,
+              "brier_ci": [
+                0.13274074074074077,
+                0.1908888888888889
+              ],
+              "reliability": 0.1614814814814815,
+              "resolution": 0.2222222222222222,
+              "reliability_exact": 0.1614814814814815,
+              "resolution_exact": 0.2222222222222222,
+              "within_bin_spread": 0.0,
+              "bin_residual": 0.0,
+              "n_groups": 3,
+              "uncertainty": 0.22222222222222224,
+              "brier_from_parts": 0.16148148148148153,
+              "aurc": 0.06394704386159773,
+              "utility": {
+                "utility": 0.7666666666666662,
+                "capture": 0.4615384615384591,
+                "capture_vs_best_constant": 0.4615384615384591,
+                "u_never": 0.6666666666666667,
+                "u_all": 0.649999999999999,
+                "u_oracle": 0.8833333333333333,
+                "tau": 0.9
+              }
+            },
+            "trace": {
+              "n": 180,
+              "accuracy": 1.0,
+              "accuracy_ci": [
+                0.9791037501849419,
+                1.0
+              ],
+              "ece": 0.0,
+              "auroc": null,
+              "auroc_ci": null,
+              "auroc_defined": false,
+              "brier": 0.0,
+              "brier_ci": [
+                0.0,
+                0.0
+              ],
+              "reliability": 0.0,
+              "resolution": 0.0,
+              "reliability_exact": 0.0,
+              "resolution_exact": 0.0,
+              "within_bin_spread": 0.0,
+              "bin_residual": 0.0,
+              "n_groups": 1,
+              "uncertainty": 0.0,
+              "brier_from_parts": 0.0,
+              "aurc": 0.0,
+              "utility": {
+                "utility": 1.0,
+                "capture": 0.0,
+                "capture_vs_best_constant": 0.0,
+                "u_never": 1.0,
+                "u_all": 0.649999999999999,
+                "u_oracle": 1.0,
+                "tau": 0.9
+              }
+            }
+          }
+        },
+        "ample::oracle_conf": {
+          "n": 720,
+          "accuracy": 0.6777777777777778,
+          "accuracy_ci": [
+            0.6427760114625837,
+            0.7108925259632841
+          ],
+          "ece": 0.0,
+          "auroc": 1.0,
+          "auroc_ci": [
+            1.0,
+            1.0
+          ],
+          "auroc_defined": true,
+          "brier": 0.0,
+          "brier_ci": [
+            0.0,
+            0.0
+          ],
+          "reliability": 0.0,
+          "resolution": 0.21839506172839507,
+          "reliability_exact": 0.0,
+          "resolution_exact": 0.21839506172839507,
+          "within_bin_spread": 0.0,
+          "bin_residual": 2.7755575615628914e-17,
+          "n_groups": 2,
+          "uncertainty": 0.21839506172839504,
+          "brier_from_parts": -2.7755575615628914e-17,
+          "aurc": 0.058833813038956885,
+          "utility": {
+            "utility": 0.8872222222222224,
+            "capture": 1.0,
+            "capture_vs_best_constant": 1.0,
+            "u_never": 0.6777777777777778,
+            "u_all": 0.6500000000000039,
+            "u_oracle": 0.8872222222222224,
+            "tau": 0.9
+          }
+        },
+        "ample::constant_one": {
+          "n": 720,
+          "accuracy": 0.6777777777777778,
+          "accuracy_ci": [
+            0.6427760114625837,
+            0.7108925259632841
+          ],
+          "ece": 0.3222222222222222,
+          "auroc": 0.5,
+          "auroc_ci": [
+            0.5,
+            0.5
+          ],
+          "auroc_defined": true,
+          "brier": 0.32222222222222224,
+          "brier_ci": [
+            0.28888888888888886,
+            0.35555555555555557
+          ],
+          "reliability": 0.10382716049382713,
+          "resolution": 0.0,
+          "reliability_exact": 0.10382716049382713,
+          "resolution_exact": 0.0,
+          "within_bin_spread": 0.0,
+          "bin_residual": 5.551115123125783e-17,
+          "n_groups": 1,
+          "uncertainty": 0.21839506172839504,
+          "brier_from_parts": 0.3222222222222222,
+          "aurc": 0.26642986108237665,
+          "utility": {
+            "utility": 0.6777777777777778,
+            "capture": 0.0,
+            "capture_vs_best_constant": 0.0,
+            "u_never": 0.6777777777777778,
+            "u_all": 0.6500000000000039,
+            "u_oracle": 0.8872222222222224,
+            "tau": 0.9
+          }
+        },
+        "ample::constant_half": {
+          "n": 720,
+          "accuracy": 0.6777777777777778,
+          "accuracy_ci": [
+            0.6427760114625837,
+            0.7108925259632841
+          ],
+          "ece": 0.1777777777777778,
+          "auroc": 0.5,
+          "auroc_ci": [
+            0.5,
+            0.5
+          ],
+          "auroc_defined": true,
+          "brier": 0.25,
+          "brier_ci": [
+            0.25,
+            0.25
+          ],
+          "reliability": 0.03160493827160495,
+          "resolution": 0.0,
+          "reliability_exact": 0.03160493827160495,
+          "resolution_exact": 0.0,
+          "within_bin_spread": 0.0,
+          "bin_residual": 0.0,
+          "n_groups": 1,
+          "uncertainty": 0.21839506172839504,
+          "brier_from_parts": 0.25,
+          "aurc": 0.26642986108237665,
+          "utility": {
+            "utility": 0.6500000000000039,
+            "capture": 0.0,
+            "capture_vs_best_constant": 0.0,
+            "u_never": 0.6777777777777778,
+            "u_all": 0.6500000000000039,
+            "u_oracle": 0.8872222222222224,
+            "tau": 0.9
+          }
+        },
+        "ample::inverted_conf": {
+          "n": 720,
+          "accuracy": 0.6777777777777778,
+          "accuracy_ci": [
+            0.6427760114625837,
+            0.7108925259632841
+          ],
+          "ece": 1.0,
+          "auroc": 0.0,
+          "auroc_ci": [
+            0.5,
+            0.5
+          ],
+          "auroc_defined": true,
+          "brier": 1.0,
+          "brier_ci": [
+            1.0,
+            1.0
+          ],
+          "reliability": 1.0,
+          "resolution": 0.21839506172839507,
+          "reliability_exact": 1.0,
+          "resolution_exact": 0.21839506172839507,
+          "within_bin_spread": 0.0,
+          "bin_residual": 0.0,
+          "n_groups": 2,
+          "uncertainty": 0.21839506172839504,
+          "brier_from_parts": 1.0,
+          "aurc": 0.6866731166269084,
+          "utility": {
+            "utility": 0.44055555555554793,
+            "capture": 0.0,
+            "capture_vs_best_constant": 0.0,
+            "u_never": 0.6777777777777778,
+            "u_all": 0.6500000000000039,
+            "u_oracle": 0.8872222222222224,
+            "tau": 0.9
+          }
+        }
+      }
+    },
+    "S5_hardest": {
+      "desc": "极难：只取最高难度",
+      "families": [
+        "arith",
+        "csp",
+        "seq",
+        "trace"
+      ],
+      "difficulties": [
+        6
+      ],
+      "n_tasks": 240,
+      "per_solver": {
+        "tight": {
+          "n": 240,
+          "accuracy": 0.008333333333333333,
+          "accuracy_ci": [
+            0.002288235363161975,
+            0.029870346273441456
+          ],
+          "ece": 0.5307965786539022,
+          "auroc": 0.5126050420168067,
+          "auroc_ci": [
+            0.046218487394957986,
+            0.9790794979079498
+          ],
+          "auroc_defined": true,
+          "brier": 0.40677915920613417,
+          "brier_ci": [
+            0.3576844933985606,
+            0.4555064785921842
+          ],
+          "reliability": 0.3985280059915779,
+          "resolution": 0.00014253972740405757,
+          "reliability_exact": 0.40275617070038705,
+          "resolution_exact": 0.00424090038314177,
+          "within_bin_spread": 0.00012980405307142783,
+          "bin_residual": 0.00012980405307144727,
+          "n_groups": 81,
+          "uncertainty": 0.008263888888888888,
+          "brier_from_parts": 0.40677915920613417,
+          "aurc": 0.9860573083390433,
+          "utility": {
+            "utility": 0.49166666666667036,
+            "capture": 0.7498383968972255,
+            "capture_vs_best_constant": 0.0,
+            "u_never": 0.008333333333333304,
+            "u_all": 0.6500000000000006,
+            "u_oracle": 0.6529166666666673,
+            "tau": 0.95
+          },
+          "per_family": {
+            "arith": {
+              "n": 60,
+              "accuracy": 0.016666666666666666,
+              "accuracy_ci": [
+                0.002948083860873681,
+                0.08855338226779479
+              ],
+              "ece": 0.9823265262558203,
+              "auroc": 0.8813559322033898,
+              "auroc_ci": [
+                0.5,
+                0.9491525423728814
+              ],
+              "auroc_defined": true,
+              "brier": 0.9813735970160207,
+              "brier_ci": [
+                0.9461829135067428,
+                0.9998752940770352
+              ],
+              "reliability": 0.9649654041858268,
+              "resolution": 0.0,
+              "reliability_exact": 0.9813735970160209,
+              "resolution_exact": 0.016388888888888856,
+              "within_bin_spread": 1.9303941304919202e-05,
+              "bin_residual": 1.9303941305004457e-05,
+              "n_groups": 60,
+              "uncertainty": 0.016388888888888887,
+              "brier_from_parts": 0.9813735970160209,
+              "aurc": 0.9652164454984234,
+              "utility": {
+                "utility": 0.02749999999999997,
+                "capture": 0.016949152542372756,
+                "capture_vs_best_constant": 0.0,
+                "u_never": 0.01666666666666672,
+                "u_all": 0.6499999999999998,
+                "u_oracle": 0.6558333333333332,
+                "tau": 0.95
+              }
+            },
+            "csp": {
+              "n": 60,
+              "accuracy": 0.0,
+              "accuracy_ci": [
+                0.0,
+                0.060173930477932895
+              ],
+              "ece": 0.6574074074074074,
+              "auroc": null,
+              "auroc_ci": null,
+              "auroc_defined": false,
+              "brier": 0.45987654320987653,
+              "brier_ci": [
+                0.4049382716049383,
+                0.5123456790123456
+              ],
+              "reliability": 0.4598765432098766,
+              "resolution": 0.0,
+              "reliability_exact": 0.4598765432098766,
+              "resolution_exact": 0.0,
+              "within_bin_spread": 0.0,
+              "bin_residual": -5.551115123125783e-17,
+              "n_groups": 8,
+              "uncertainty": 0.0,
+              "brier_from_parts": 0.4598765432098766,
+              "aurc": 1.0,
+              "utility": {
+                "utility": 0.6391666666666664,
+                "capture": 0.9833333333333333,
+                "capture_vs_best_constant": 0.0,
+                "u_never": 0.0,
+                "u_all": 0.6499999999999998,
+                "u_oracle": 0.6499999999999998,
+                "tau": 0.95
+              }
+            },
+            "seq": {
+              "n": 60,
+              "accuracy": 0.0,
+              "accuracy_ci": [
+                0.0,
+                0.060173930477932895
+              ],
+              "ece": 0.2,
+              "auroc": null,
+              "auroc_ci": null,
+              "auroc_defined": false,
+              "brier": 0.04000000000000001,
+              "brier_ci": [
+                0.04000000000000001,
+                0.04000000000000001
+              ],
+              "reliability": 0.04000000000000001,
+              "resolution": 0.0,
+              "reliability_exact": 0.04000000000000001,
+              "resolution_exact": 0.0,
+              "within_bin_spread": 0.0,
+              "bin_residual": 0.0,
+              "n_groups": 1,
+              "uncertainty": 0.0,
+              "brier_from_parts": 0.04000000000000001,
+              "aurc": 1.0,
+              "utility": {
+                "utility": 0.6499999999999998,
+                "capture": 1.0,
+                "capture_vs_best_constant": 0.0,
+                "u_never": 0.0,
+                "u_all": 0.6499999999999998,
+                "u_oracle": 0.6499999999999998,
+                "tau": 0.95
+              }
+            },
+            "trace": {
+              "n": 60,
+              "accuracy": 0.016666666666666666,
+              "accuracy_ci": [
+                0.002948083860873681,
+                0.08855338226779479
+              ],
+              "ece": 0.28345238095238096,
+              "auroc": 0.23728813559322035,
+              "auroc_ci": [
+                0.1810344827586207,
+                0.5
+              ],
+              "auroc_defined": true,
+              "brier": 0.14586649659863946,
+              "brier_ci": [
+                0.10692431972789115,
+                0.18864200680272109
+              ],
+              "reliability": 0.12950420527406364,
+              "resolution": 0.0002969348659003832,
+              "reliability_exact": 0.12977454257565094,
+              "resolution_exact": 0.0002969348659003832,
+              "within_bin_spread": 0.0002703373015873015,
+              "bin_residual": 0.0002703373015872923,
+              "n_groups": 12,
+              "uncertainty": 0.016388888888888887,
+              "brier_from_parts": 0.14586649659863946,
+              "aurc": 0.9997222222222223,
+              "utility": {
+                "utility": 0.6499999999999998,
+                "capture": 0.9908735332464146,
+                "capture_vs_best_constant": 0.0,
+                "u_never": 0.01666666666666672,
+                "u_all": 0.6499999999999998,
+                "u_oracle": 0.6558333333333332,
+                "tau": 0.95
+              }
+            }
+          }
+        },
+        "tight::oracle_conf": {
+          "n": 240,
+          "accuracy": 0.008333333333333333,
+          "accuracy_ci": [
+            0.002288235363161975,
+            0.029870346273441456
+          ],
+          "ece": 0.0,
+          "auroc": 1.0,
+          "auroc_ci": [
+            0.5,
+            1.0
+          ],
+          "auroc_defined": true,
+          "brier": 0.0,
+          "brier_ci": [
+            0.0,
+            0.0
+          ],
+          "reliability": 0.0,
+          "resolution": 0.00826388888888889,
+          "reliability_exact": 0.0,
+          "resolution_exact": 0.00826388888888889,
+          "within_bin_spread": 0.0,
+          "bin_residual": 1.734723475976807e-18,
+          "n_groups": 2,
+          "uncertainty": 0.008263888888888888,
+          "brier_from_parts": -1.734723475976807e-18,
+          "aurc": 0.9536671960431657,
+          "utility": {
+            "utility": 0.6529166666666673,
+            "capture": 1.0,
+            "capture_vs_best_constant": 1.0,
+            "u_never": 0.008333333333333304,
+            "u_all": 0.6500000000000006,
+            "u_oracle": 0.6529166666666673,
+            "tau": 0.95
+          }
+        },
+        "tight::constant_one": {
+          "n": 240,
+          "accuracy": 0.008333333333333333,
+          "accuracy_ci": [
+            0.002288235363161975,
+            0.029870346273441456
+          ],
+          "ece": 0.9916666666666667,
+          "auroc": 0.5,
+          "auroc_ci": [
+            0.5,
+            0.5
+          ],
+          "auroc_defined": true,
+          "brier": 0.9916666666666667,
+          "brier_ci": [
+            0.9791666666666666,
+            1.0
+          ],
+          "reliability": 0.9834027777777778,
+          "resolution": 0.0,
+          "reliability_exact": 0.9834027777777778,
+          "resolution_exact": 0.0,
+          "within_bin_spread": 0.0,
+          "bin_residual": 0.0,
+          "n_groups": 1,
+          "uncertainty": 0.008263888888888888,
+          "brier_from_parts": 0.9916666666666667,
+          "aurc": 0.9902924515400002,
+          "utility": {
+            "utility": 0.008333333333333304,
+            "capture": 0.0,
+            "capture_vs_best_constant": 0.0,
+            "u_never": 0.008333333333333304,
+            "u_all": 0.6500000000000006,
+            "u_oracle": 0.6529166666666673,
+            "tau": 0.95
+          }
+        },
+        "tight::constant_half": {
+          "n": 240,
+          "accuracy": 0.008333333333333333,
+          "accuracy_ci": [
+            0.002288235363161975,
+            0.029870346273441456
+          ],
+          "ece": 0.49166666666666664,
+          "auroc": 0.5,
+          "auroc_ci": [
+            0.5,
+            0.5
+          ],
+          "auroc_defined": true,
+          "brier": 0.25,
+          "brier_ci": [
+            0.25,
+            0.25
+          ],
+          "reliability": 0.2417361111111111,
+          "resolution": 0.0,
+          "reliability_exact": 0.2417361111111111,
+          "resolution_exact": 0.0,
+          "within_bin_spread": 0.0,
+          "bin_residual": 2.7755575615628914e-17,
+          "n_groups": 1,
+          "uncertainty": 0.008263888888888888,
+          "brier_from_parts": 0.24999999999999997,
+          "aurc": 0.9902924515400002,
+          "utility": {
+            "utility": 0.6500000000000006,
+            "capture": 0.995475113122172,
+            "capture_vs_best_constant": 0.0,
+            "u_never": 0.008333333333333304,
+            "u_all": 0.6500000000000006,
+            "u_oracle": 0.6529166666666673,
+            "tau": 0.95
+          }
+        },
+        "tight::inverted_conf": {
+          "n": 240,
+          "accuracy": 0.008333333333333333,
+          "accuracy_ci": [
+            0.002288235363161975,
+            0.029870346273441456
+          ],
+          "ece": 1.0,
+          "auroc": 0.0,
+          "auroc_ci": [
+            0.5,
+            0.5
+          ],
+          "auroc_defined": true,
+          "brier": 1.0,
+          "brier_ci": [
+            1.0,
+            1.0
+          ],
+          "reliability": 1.0,
+          "resolution": 0.00826388888888889,
+          "reliability_exact": 1.0,
+          "resolution_exact": 0.00826388888888889,
+          "within_bin_spread": 0.0,
+          "bin_residual": 0.0,
+          "n_groups": 2,
+          "uncertainty": 0.008263888888888888,
+          "brier_from_parts": 1.0,
+          "aurc": 0.9999478440260343,
+          "utility": {
+            "utility": 0.005416666666666736,
+            "capture": 0.0,
+            "capture_vs_best_constant": 0.0,
+            "u_never": 0.008333333333333304,
+            "u_all": 0.6500000000000006,
+            "u_oracle": 0.6529166666666673,
+            "tau": 0.95
+          }
+        },
+        "ample": {
+          "n": 240,
+          "accuracy": 0.5,
+          "accuracy_ci": [
+            0.43724155475169957,
+            0.5627584452483004
+          ],
+          "ece": 0.2597222222219694,
+          "auroc": 0.93125,
+          "auroc_ci": [
+            0.8917410714285714,
+            0.9669771968854283
+          ],
+          "auroc_defined": true,
+          "brier": 0.18896090534979423,
+          "brier_ci": [
+            0.15046296296296297,
+            0.2284320987654321
+          ],
+          "reliability": 0.14697617252532433,
+          "resolution": 0.2080152671755725,
+          "reliability_exact": 0.15022851098359705,
+          "resolution_exact": 0.21126760563380287,
+          "within_bin_spread": 4.2469893885798476e-14,
+          "bin_residual": 4.241051954068098e-14,
+          "n_groups": 62,
+          "uncertainty": 0.25,
+          "brier_from_parts": 0.18896090534979418,
+          "aurc": 0.30981015641991205,
+          "utility": {
+            "utility": 0.7952083333333329,
+            "capture": 0.9083333333333329,
+            "capture_vs_best_constant": 0.8297619047619033,
+            "u_never": 0.5,
+            "u_all": 0.6500000000000006,
+            "u_oracle": 0.8249999999999996,
+            "tau": 0.9
+          },
+          "per_family": {
+            "arith": {
+              "n": 60,
+              "accuracy": 1.0,
+              "accuracy_ci": [
+                0.939826069522067,
+                0.9999999999999998
+              ],
+              "ece": 1.0115241977359801e-12,
+              "auroc": null,
+              "auroc_ci": null,
+              "auroc_defined": false,
+              "brier": 5.350804567826626e-23,
+              "brier_ci": [
+                4.483206019908115e-27,
+                1.6051223228454714e-22
+              ],
+              "reliability": 1.0231812026054182e-24,
+              "resolution": 0.0,
+              "reliability_exact": 5.350804567826624e-23,
+              "resolution_exact": 0.0,
+              "within_bin_spread": 5.2484800838005106e-23,
+              "bin_residual": 5.2484864475660844e-23,
+              "n_groups": 56,
+              "uncertainty": 0.0,
+              "brier_from_parts": 5.350804567826624e-23,
+              "aurc": 0.0,
+              "utility": {
+                "utility": 1.0,
+                "capture": 0.0,
+                "capture_vs_best_constant": 0.0,
+                "u_never": 1.0,
+                "u_all": 0.6499999999999998,
+                "u_oracle": 1.0,
+                "tau": 0.9
+              }
+            },
+            "csp": {
+              "n": 60,
+              "accuracy": 0.0,
+              "accuracy_ci": [
+                0.0,
+                0.060173930477932895
+              ],
+              "ece": 0.8388888888888888,
+              "auroc": null,
+              "auroc_ci": null,
+              "auroc_defined": false,
+              "brier": 0.7158436213991769,
+              "brier_ci": [
+                0.6697530864197531,
+                0.7617283950617284
+              ],
+              "reliability": 0.715843621399177,
+              "resolution": 0.0,
+              "reliability_exact": 0.7158436213991769,
+              "resolution_exact": 0.0,
+              "within_bin_spread": 4.108650548026103e-33,
+              "bin_residual": -1.1102230246251565e-16,
+              "n_groups": 5,
+              "uncertainty": 0.0,
+              "brier_from_parts": 0.7158436213991769,
+              "aurc": 1.0,
+              "utility": {
+                "utility": 0.5308333333333329,
+                "capture": 0.8166666666666663,
+                "capture_vs_best_constant": 0.0,
+                "u_never": 0.0,
+                "u_all": 0.6499999999999998,
+                "u_oracle": 0.6499999999999998,
+                "tau": 0.9
+              }
+            },
+            "seq": {
+              "n": 60,
+              "accuracy": 0.0,
+              "accuracy_ci": [
+                0.0,
+                0.060173930477932895
+              ],
+              "ece": 0.2,
+              "auroc": null,
+              "auroc_ci": null,
+              "auroc_defined": false,
+              "brier": 0.04000000000000001,
+              "brier_ci": [
+                0.04000000000000001,
+                0.04000000000000001
+              ],
+              "reliability": 0.04000000000000001,
+              "resolution": 0.0,
+              "reliability_exact": 0.04000000000000001,
+              "resolution_exact": 0.0,
+              "within_bin_spread": 0.0,
+              "bin_residual": 0.0,
+              "n_groups": 1,
+              "uncertainty": 0.0,
+              "brier_from_parts": 0.04000000000000001,
+              "aurc": 1.0,
+              "utility": {
+                "utility": 0.6499999999999998,
+                "capture": 1.0,
+                "capture_vs_best_constant": 0.0,
+                "u_never": 0.0,
+                "u_all": 0.6499999999999998,
+                "u_oracle": 0.6499999999999998,
+                "tau": 0.9
+              }
+            },
+            "trace": {
+              "n": 60,
+              "accuracy": 1.0,
+              "accuracy_ci": [
+                0.939826069522067,
+                0.9999999999999998
+              ],
+              "ece": 0.0,
+              "auroc": null,
+              "auroc_ci": null,
+              "auroc_defined": false,
+              "brier": 0.0,
+              "brier_ci": [
+                0.0,
+                0.0
+              ],
+              "reliability": 0.0,
+              "resolution": 0.0,
+              "reliability_exact": 0.0,
+              "resolution_exact": 0.0,
+              "within_bin_spread": 0.0,
+              "bin_residual": 0.0,
+              "n_groups": 1,
+              "uncertainty": 0.0,
+              "brier_from_parts": 0.0,
+              "aurc": 0.0,
+              "utility": {
+                "utility": 1.0,
+                "capture": 0.0,
+                "capture_vs_best_constant": 0.0,
+                "u_never": 1.0,
+                "u_all": 0.6499999999999998,
+                "u_oracle": 1.0,
+                "tau": 0.9
+              }
+            }
+          }
+        },
+        "ample::oracle_conf": {
+          "n": 240,
+          "accuracy": 0.5,
+          "accuracy_ci": [
+            0.43724155475169957,
+            0.5627584452483004
+          ],
+          "ece": 0.0,
+          "auroc": 1.0,
+          "auroc_ci": [
+            1.0,
+            1.0
+          ],
+          "auroc_defined": true,
+          "brier": 0.0,
+          "brier_ci": [
+            0.0,
+            0.0
+          ],
+          "reliability": 0.0,
+          "resolution": 0.25,
+          "reliability_exact": 0.0,
+          "resolution_exact": 0.25,
+          "within_bin_spread": 0.0,
+          "bin_residual": 0.0,
+          "n_groups": 2,
+          "uncertainty": 0.25,
+          "brier_from_parts": 0.0,
+          "aurc": 0.1544659062666425,
+          "utility": {
+            "utility": 0.8249999999999996,
+            "capture": 1.0,
+            "capture_vs_best_constant": 1.0,
+            "u_never": 0.5,
+            "u_all": 0.6500000000000006,
+            "u_oracle": 0.8249999999999996,
+            "tau": 0.9
+          }
+        },
+        "ample::constant_one": {
+          "n": 240,
+          "accuracy": 0.5,
+          "accuracy_ci": [
+            0.43724155475169957,
+            0.5627584452483004
+          ],
+          "ece": 0.5,
+          "auroc": 0.5,
+          "auroc_ci": [
+            0.5,
+            0.5
+          ],
+          "auroc_defined": true,
+          "brier": 0.5,
+          "brier_ci": [
+            0.4375,
+            0.5625
+          ],
+          "reliability": 0.25,
+          "resolution": 0.0,
+          "reliability_exact": 0.25,
+          "resolution_exact": 0.0,
+          "within_bin_spread": 0.0,
+          "bin_residual": 0.0,
+          "n_groups": 1,
+          "uncertainty": 0.25,
+          "brier_from_parts": 0.5,
+          "aurc": 0.37022504947724066,
+          "utility": {
+            "utility": 0.5,
+            "capture": 0.0,
+            "capture_vs_best_constant": 0.0,
+            "u_never": 0.5,
+            "u_all": 0.6500000000000006,
+            "u_oracle": 0.8249999999999996,
+            "tau": 0.9
+          }
+        },
+        "ample::constant_half": {
+          "n": 240,
+          "accuracy": 0.5,
+          "accuracy_ci": [
+            0.43724155475169957,
+            0.5627584452483004
+          ],
+          "ece": 0.0,
+          "auroc": 0.5,
+          "auroc_ci": [
+            0.5,
+            0.5
+          ],
+          "auroc_defined": true,
+          "brier": 0.25,
+          "brier_ci": [
+            0.25,
+            0.25
+          ],
+          "reliability": 0.0,
+          "resolution": 0.0,
+          "reliability_exact": 0.0,
+          "resolution_exact": 0.0,
+          "within_bin_spread": 0.0,
+          "bin_residual": 0.0,
+          "n_groups": 1,
+          "uncertainty": 0.25,
+          "brier_from_parts": 0.25,
+          "aurc": 0.37022504947724066,
+          "utility": {
+            "utility": 0.6500000000000006,
+            "capture": 0.46153846153846384,
+            "capture_vs_best_constant": 0.0,
+            "u_never": 0.5,
+            "u_all": 0.6500000000000006,
+            "u_oracle": 0.8249999999999996,
+            "tau": 0.9
+          }
+        },
+        "ample::inverted_conf": {
+          "n": 240,
+          "accuracy": 0.5,
+          "accuracy_ci": [
+            0.43724155475169957,
+            0.5627584452483004
+          ],
+          "ece": 1.0,
+          "auroc": 0.0,
+          "auroc_ci": [
+            0.5,
+            0.5
+          ],
+          "auroc_defined": true,
+          "brier": 1.0,
+          "brier_ci": [
+            1.0,
+            1.0
+          ],
+          "reliability": 1.0,
+          "resolution": 0.25,
+          "reliability_exact": 1.0,
+          "resolution_exact": 0.25,
+          "within_bin_spread": 0.0,
+          "bin_residual": 0.0,
+          "n_groups": 2,
+          "uncertainty": 0.25,
+          "brier_from_parts": 1.0,
+          "aurc": 0.8455340937333575,
+          "utility": {
+            "utility": 0.3250000000000014,
+            "capture": 0.0,
+            "capture_vs_best_constant": 0.0,
+            "u_never": 0.5,
+            "u_all": 0.6500000000000006,
+            "u_oracle": 0.8249999999999996,
+            "tau": 0.9
+          }
+        }
+      }
+    },
+    "S6_crossfam": {
+      "desc": "域迁移：在算术链/约束满足上校准，测序列归纳/程序追踪",
+      "families": [
+        "seq",
+        "trace"
+      ],
+      "difficulties": [
+        3,
+        4
+      ],
+      "n_tasks": 240,
+      "per_solver": {
+        "tight": {
+          "n": 240,
+          "accuracy": 0.1125,
+          "accuracy_ci": [
+            0.0784768606712071,
+            0.15873286892374305
+          ],
+          "ece": 0.4606770833333333,
+          "auroc": 0.738567205703356,
+          "auroc_ci": [
+            0.6554798637547585,
+            0.8142523364485982
+          ],
+          "auroc_defined": true,
+          "brier": 0.3771139322916667,
+          "brier_ci": [
+            0.329861328125,
+            0.4306627604166667
+          ],
+          "reliability": 0.28810767621545474,
+          "resolution": 0.010401764911463189,
+          "reliability_exact": 0.29323172437473055,
+          "resolution_exact": 0.01596154208306387,
+          "within_bin_spread": -0.00043572901232489223,
+          "bin_residual": -0.0004357290123249147,
+          "n_groups": 17,
+          "uncertainty": 0.09984375,
+          "brier_from_parts": 0.3771139322916667,
+          "aurc": 0.8483390081056233,
+          "utility": {
+            "utility": 0.530625000000003,
+            "capture": 0.7248104008667442,
+            "capture_vs_best_constant": 0.0,
+            "u_never": 0.11250000000000004,
+            "u_all": 0.6500000000000006,
+            "u_oracle": 0.689375,
+            "tau": 0.95
+          },
+          "per_family": {
+            "seq": {
+              "n": 120,
+              "accuracy": 0.08333333333333333,
+              "accuracy_ci": [
+                0.045893154816730314,
+                0.14662373772987763
+              ],
+              "ece": 0.5166666666666667,
+              "auroc": 0.7727272727272727,
+              "auroc_ci": [
+                0.7259615384615384,
+                0.8181818181818182
+              ],
+              "auroc_defined": true,
+              "brier": 0.43666666666666665,
+              "brier_ci": [
+                0.3556666666666667,
+                0.5233333333333333
+              ],
+              "reliability": 0.3672222222222223,
+              "resolution": 0.006944444444444444,
+              "reliability_exact": 0.3672222222222223,
+              "resolution_exact": 0.006944444444444444,
+              "within_bin_spread": 0.0,
+              "bin_residual": -1.1102230246251565e-16,
+              "n_groups": 2,
+              "uncertainty": 0.07638888888888888,
+              "brier_from_parts": 0.43666666666666676,
+              "aurc": 0.8994981197568048,
+              "utility": {
+                "utility": 0.40833333333333377,
+                "capture": 0.5454545454545467,
+                "capture_vs_best_constant": 0.0,
+                "u_never": 0.08333333333333337,
+                "u_all": 0.6499999999999992,
+                "u_oracle": 0.679166666666666,
+                "tau": 0.95
+              }
+            },
+            "trace": {
+              "n": 120,
+              "accuracy": 0.14166666666666666,
+              "accuracy_ci": [
+                0.09036804031591959,
+                0.21519648727416327
+              ],
+              "ece": 0.4046874999999999,
+              "auroc": 0.789548829240434,
+              "auroc_ci": [
+                0.6677559912854031,
+                0.8933333333333333
+              ],
+              "auroc_defined": true,
+              "brier": 0.31756119791666665,
+              "brier_ci": [
+                0.26952213541666664,
+                0.3689921875
+              ],
+              "reliability": 0.21351057948169072,
+              "resolution": 0.015629918711815263,
+              "reliability_exact": 0.22493339410465235,
+              "resolution_exact": 0.028969418410207885,
+              "within_bin_spread": -0.0019166850754310345,
+              "bin_residual": -0.0019166850754310238,
+              "n_groups": 16,
+              "uncertainty": 0.12159722222222223,
+              "brier_from_parts": 0.3175611979166667,
+              "aurc": 0.7112999421758345,
+              "utility": {
+                "utility": 0.6529166666666659,
+                "capture": 0.9163554891710227,
+                "capture_vs_best_constant": 0.058823529411764705,
+                "u_never": 0.14166666666666672,
+                "u_all": 0.6499999999999992,
+                "u_oracle": 0.6995833333333328,
+                "tau": 0.95
+              }
+            }
+          }
+        },
+        "tight::oracle_conf": {
+          "n": 240,
+          "accuracy": 0.1125,
+          "accuracy_ci": [
+            0.0784768606712071,
+            0.15873286892374305
+          ],
+          "ece": 0.0,
+          "auroc": 1.0,
+          "auroc_ci": [
+            1.0,
+            1.0
+          ],
+          "auroc_defined": true,
+          "brier": 0.0,
+          "brier_ci": [
+            0.0,
+            0.0
+          ],
+          "reliability": 0.0,
+          "resolution": 0.09984375,
+          "reliability_exact": 0.0,
+          "resolution_exact": 0.09984375,
+          "within_bin_spread": 0.0,
+          "bin_residual": 0.0,
+          "n_groups": 2,
+          "uncertainty": 0.09984375,
+          "brier_from_parts": 0.0,
+          "aurc": 0.6435460313235969,
+          "utility": {
+            "utility": 0.689375,
+            "capture": 1.0,
+            "capture_vs_best_constant": 1.0,
+            "u_never": 0.11250000000000004,
+            "u_all": 0.6500000000000006,
+            "u_oracle": 0.689375,
+            "tau": 0.95
+          }
+        },
+        "tight::constant_one": {
+          "n": 240,
+          "accuracy": 0.1125,
+          "accuracy_ci": [
+            0.0784768606712071,
+            0.15873286892374305
+          ],
+          "ece": 0.8875,
+          "auroc": 0.5,
+          "auroc_ci": [
+            0.5,
+            0.5
+          ],
+          "auroc_defined": true,
+          "brier": 0.8875,
+          "brier_ci": [
+            0.8458333333333333,
+            0.925
+          ],
+          "reliability": 0.78765625,
+          "resolution": 0.0,
+          "reliability_exact": 0.78765625,
+          "resolution_exact": 0.0,
+          "within_bin_spread": 0.0,
+          "bin_residual": 0.0,
+          "n_groups": 1,
+          "uncertainty": 0.09984375,
+          "brier_from_parts": 0.8875,
+          "aurc": 0.8867451281569304,
+          "utility": {
+            "utility": 0.11250000000000004,
+            "capture": 0.0,
+            "capture_vs_best_constant": 0.0,
+            "u_never": 0.11250000000000004,
+            "u_all": 0.6500000000000006,
+            "u_oracle": 0.689375,
+            "tau": 0.95
+          }
+        },
+        "tight::constant_half": {
+          "n": 240,
+          "accuracy": 0.1125,
+          "accuracy_ci": [
+            0.0784768606712071,
+            0.15873286892374305
+          ],
+          "ece": 0.3875,
+          "auroc": 0.5,
+          "auroc_ci": [
+            0.5,
+            0.5
+          ],
+          "auroc_defined": true,
+          "brier": 0.25,
+          "brier_ci": [
+            0.25,
+            0.25
+          ],
+          "reliability": 0.15015625000000002,
+          "resolution": 0.0,
+          "reliability_exact": 0.15015625000000002,
+          "resolution_exact": 0.0,
+          "within_bin_spread": 0.0,
+          "bin_residual": 0.0,
+          "n_groups": 1,
+          "uncertainty": 0.09984375,
+          "brier_from_parts": 0.25,
+          "aurc": 0.8867451281569304,
+          "utility": {
+            "utility": 0.6500000000000006,
+            "capture": 0.9317443120260033,
+            "capture_vs_best_constant": 0.0,
+            "u_never": 0.11250000000000004,
+            "u_all": 0.6500000000000006,
+            "u_oracle": 0.689375,
+            "tau": 0.95
+          }
+        },
+        "tight::inverted_conf": {
+          "n": 240,
+          "accuracy": 0.1125,
+          "accuracy_ci": [
+            0.0784768606712071,
+            0.15873286892374305
+          ],
+          "ece": 1.0,
+          "auroc": 0.0,
+          "auroc_ci": [
+            0.5,
+            0.5
+          ],
+          "auroc_defined": true,
+          "brier": 1.0,
+          "brier_ci": [
+            1.0,
+            1.0
+          ],
+          "reliability": 1.0,
+          "resolution": 0.09984375,
+          "reliability_exact": 1.0,
+          "resolution_exact": 0.09984375,
+          "within_bin_spread": 0.0,
+          "bin_residual": 0.0,
+          "n_groups": 2,
+          "uncertainty": 0.09984375,
+          "brier_from_parts": 1.0,
+          "aurc": 0.993186218549974,
+          "utility": {
+            "utility": 0.07312500000000033,
+            "capture": 0.0,
+            "capture_vs_best_constant": 0.0,
+            "u_never": 0.11250000000000004,
+            "u_all": 0.6500000000000006,
+            "u_oracle": 0.689375,
+            "tau": 0.95
+          }
+        },
+        "ample": {
+          "n": 240,
+          "accuracy": 0.5,
+          "accuracy_ci": [
+            0.43724155475169957,
+            0.5627584452483004
+          ],
+          "ece": 0.3,
+          "auroc": 0.75,
+          "auroc_ci": [
+            0.7045454545454546,
+            0.793859649122807
+          ],
+          "auroc_defined": true,
+          "brier": 0.26,
+          "brier_ci": [
+            0.207,
+            0.3143333333333333
+          ],
+          "reliability": 0.09333333333333335,
+          "resolution": 0.08333333333333333,
+          "reliability_exact": 0.09333333333333335,
+          "resolution_exact": 0.08333333333333333,
+          "within_bin_spread": 0.0,
+          "bin_residual": 0.0,
+          "n_groups": 2,
+          "uncertainty": 0.25,
+          "brier_from_parts": 0.26,
+          "aurc": 0.6297749505227592,
+          "utility": {
+            "utility": 0.6625000000000011,
+            "capture": 0.5000000000000039,
+            "capture_vs_best_constant": 0.07142857142857474,
+            "u_never": 0.5,
+            "u_all": 0.6500000000000006,
+            "u_oracle": 0.8249999999999996,
+            "tau": 0.9
+          },
+          "per_family": {
+            "seq": {
+              "n": 120,
+              "accuracy": 0.0,
+              "accuracy_ci": [
+                0.0,
+                0.031020271055929517
+              ],
+              "ece": 0.6,
+              "auroc": null,
+              "auroc_ci": null,
+              "auroc_defined": false,
+              "brier": 0.52,
+              "brier_ci": [
+                0.44,
+                0.608
+              ],
+              "reliability": 0.52,
+              "resolution": 0.0,
+              "reliability_exact": 0.52,
+              "resolution_exact": 0.0,
+              "within_bin_spread": 0.0,
+              "bin_residual": 0.0,
+              "n_groups": 2,
+              "uncertainty": 0.0,
+              "brier_from_parts": 0.52,
+              "aurc": 1.0,
+              "utility": {
+                "utility": 0.3250000000000022,
+                "capture": 0.5000000000000039,
+                "capture_vs_best_constant": 0.0,
+                "u_never": 0.0,
+                "u_all": 0.6499999999999992,
+                "u_oracle": 0.6499999999999992,
+                "tau": 0.9
+              }
+            },
+            "trace": {
+              "n": 120,
+              "accuracy": 1.0,
+              "accuracy_ci": [
+                0.9689797289440706,
+                1.0
+              ],
+              "ece": 0.0,
+              "auroc": null,
+              "auroc_ci": null,
+              "auroc_defined": false,
+              "brier": 0.0,
+              "brier_ci": [
+                0.0,
+                0.0
+              ],
+              "reliability": 0.0,
+              "resolution": 0.0,
+              "reliability_exact": 0.0,
+              "resolution_exact": 0.0,
+              "within_bin_spread": 0.0,
+              "bin_residual": 0.0,
+              "n_groups": 1,
+              "uncertainty": 0.0,
+              "brier_from_parts": 0.0,
+              "aurc": 0.0,
+              "utility": {
+                "utility": 1.0,
+                "capture": 0.0,
+                "capture_vs_best_constant": 0.0,
+                "u_never": 1.0,
+                "u_all": 0.6499999999999992,
+                "u_oracle": 1.0,
+                "tau": 0.9
+              }
+            }
+          }
+        },
+        "ample::oracle_conf": {
+          "n": 240,
+          "accuracy": 0.5,
+          "accuracy_ci": [
+            0.43724155475169957,
+            0.5627584452483004
+          ],
+          "ece": 0.0,
+          "auroc": 1.0,
+          "auroc_ci": [
+            1.0,
+            1.0
+          ],
+          "auroc_defined": true,
+          "brier": 0.0,
+          "brier_ci": [
+            0.0,
+            0.0
+          ],
+          "reliability": 0.0,
+          "resolution": 0.25,
+          "reliability_exact": 0.0,
+          "resolution_exact": 0.25,
+          "within_bin_spread": 0.0,
+          "bin_residual": 0.0,
+          "n_groups": 2,
+          "uncertainty": 0.25,
+          "brier_from_parts": 0.0,
+          "aurc": 0.1544659062666425,
+          "utility": {
+            "utility": 0.8249999999999996,
+            "capture": 1.0,
+            "capture_vs_best_constant": 1.0,
+            "u_never": 0.5,
+            "u_all": 0.6500000000000006,
+            "u_oracle": 0.8249999999999996,
+            "tau": 0.9
+          }
+        },
+        "ample::constant_one": {
+          "n": 240,
+          "accuracy": 0.5,
+          "accuracy_ci": [
+            0.43724155475169957,
+            0.5627584452483004
+          ],
+          "ece": 0.5,
+          "auroc": 0.5,
+          "auroc_ci": [
+            0.5,
+            0.5
+          ],
+          "auroc_defined": true,
+          "brier": 0.5,
+          "brier_ci": [
+            0.44166666666666665,
+            0.5625
+          ],
+          "reliability": 0.25,
+          "resolution": 0.0,
+          "reliability_exact": 0.25,
+          "resolution_exact": 0.0,
+          "within_bin_spread": 0.0,
+          "bin_residual": 0.0,
+          "n_groups": 1,
+          "uncertainty": 0.25,
+          "brier_from_parts": 0.5,
+          "aurc": 0.8455340937333575,
+          "utility": {
+            "utility": 0.5,
+            "capture": 0.0,
+            "capture_vs_best_constant": 0.0,
+            "u_never": 0.5,
+            "u_all": 0.6500000000000006,
+            "u_oracle": 0.8249999999999996,
+            "tau": 0.9
+          }
+        },
+        "ample::constant_half": {
+          "n": 240,
+          "accuracy": 0.5,
+          "accuracy_ci": [
+            0.43724155475169957,
+            0.5627584452483004
+          ],
+          "ece": 0.0,
+          "auroc": 0.5,
+          "auroc_ci": [
+            0.5,
+            0.5
+          ],
+          "auroc_defined": true,
+          "brier": 0.25,
+          "brier_ci": [
+            0.25,
+            0.25
+          ],
+          "reliability": 0.0,
+          "resolution": 0.0,
+          "reliability_exact": 0.0,
+          "resolution_exact": 0.0,
+          "within_bin_spread": 0.0,
+          "bin_residual": 0.0,
+          "n_groups": 1,
+          "uncertainty": 0.25,
+          "brier_from_parts": 0.25,
+          "aurc": 0.8455340937333575,
+          "utility": {
+            "utility": 0.6500000000000006,
+            "capture": 0.46153846153846384,
+            "capture_vs_best_constant": 0.0,
+            "u_never": 0.5,
+            "u_all": 0.6500000000000006,
+            "u_oracle": 0.8249999999999996,
+            "tau": 0.9
+          }
+        },
+        "ample::inverted_conf": {
+          "n": 240,
+          "accuracy": 0.5,
+          "accuracy_ci": [
+            0.43724155475169957,
+            0.5627584452483004
+          ],
+          "ece": 1.0,
+          "auroc": 0.0,
+          "auroc_ci": [
+            0.5,
+            0.5
+          ],
+          "auroc_defined": true,
+          "brier": 1.0,
+          "brier_ci": [
+            1.0,
+            1.0
+          ],
+          "reliability": 1.0,
+          "resolution": 0.25,
+          "reliability_exact": 1.0,
+          "resolution_exact": 0.25,
+          "within_bin_spread": 0.0,
+          "bin_residual": 0.0,
+          "n_groups": 2,
+          "uncertainty": 0.25,
+          "brier_from_parts": 1.0,
+          "aurc": 0.8455340937333575,
+          "utility": {
+            "utility": 0.32500000000000284,
+            "capture": 0.0,
+            "capture_vs_best_constant": 0.0,
+            "u_never": 0.5,
+            "u_all": 0.6500000000000006,
+            "u_oracle": 0.8249999999999996,
+            "tau": 0.9
+          }
+        }
+      }
+    }
+  },
+  "tau_frozen": {
+    "tight": 0.95,
+    "ample": 0.9
+  },
+  "solver_meta": {
+    "limits": {
+      "tight": {
+        "name": "tight",
+        "sig_digits": 6,
+        "beam_width": 4,
+        "shown_terms": 4,
+        "memory_slots": 4
+      },
+      "ample": {
+        "name": "ample",
+        "sig_digits": 15,
+        "beam_width": 99,
+        "shown_terms": 12,
+        "memory_slots": 24
+      }
+    },
+    "solvers": [
+      "arith",
+      "csp",
+      "seq",
+      "trace"
+    ],
+    "validation_policies": [
+      {
+        "name": "oracle_conf",
+        "desc": "完美前瞻：动手前就知道自己会对不对（指标上界）"
+      },
+      {
+        "name": "constant_one",
+        "desc": "恒报置信 1.0（答案仍用基础求解器）"
+      },
+      {
+        "name": "constant_half",
+        "desc": "恒报置信 0.5（校准完美、分辨为零）"
+      },
+      {
+        "name": "inverted_conf",
+        "desc": "反向前瞻：把把握度用反（应给出 AUROC < 0.5）"
+      }
+    ]
+  }
+}
