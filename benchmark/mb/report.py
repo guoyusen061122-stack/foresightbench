@@ -36,7 +36,10 @@ def main_with_dir(res_dir: str) -> None:
 
 
 def main() -> int:
-    res_dir = sys.argv[1] if len(sys.argv) > 1 else "results"
+    # 默认目录锚在**本文件**上，不锚在当前工作目录（见 runner.BENCH_DIR 的说明）。
+    default_dir = os.path.join(
+        os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "results")
+    res_dir = sys.argv[1] if len(sys.argv) > 1 else default_dir
     _build(res_dir)
     return 0
 

@@ -27,6 +27,11 @@ from .solvers import AMPLE, TIGHT, Prediction
 from .tasks import FAMILY_ZH, make_tasks
 
 # (条件名, 说明, 参与族, 难度集合)
+# 结果目录一律相对**本文件**解析，不相对当前工作目录。
+# 为什么：如果写成 "results"，从仓库根目录跑就会写到 ./results，
+# 而测试与报告读的是 benchmark/results —— 于是"跑过了但报告没更新"，
+# 这正是 AI日志 案例 J 那一类静默不一致。路径必须锚在代码位置上。
+BENCH_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CONDITIONS = [
     ("S1_same", "同分布（校准集本身，作为对照）", ("arith", "csp", "seq", "trace"),
      (2, 3, 4)),
@@ -187,7 +192,7 @@ def main() -> int:
     ap = argparse.ArgumentParser(description="ForesightBench 运行器")
     ap.add_argument("--n", type=int, default=60, help="每格题数")
     ap.add_argument("--seed", type=int, default=20261003)
-    ap.add_argument("--out", default="results")
+    ap.add_argument("--out", default=os.path.join(BENCH_DIR, "results"))
     ap.add_argument("--power", action="store_true", help="只跑样本量功效扫描")
     ap.add_argument("--all", action="store_true",
                     help="功效扫描 + 全量评测 + 生成报告（复现用这一条）")

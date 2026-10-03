@@ -23,6 +23,7 @@ from __future__ import annotations
 
 import hashlib
 import json
+import os
 from dataclasses import dataclass, asdict
 
 
@@ -184,14 +185,15 @@ def main() -> int:
     ap = argparse.ArgumentParser(description="生成并冻结一份任务快照")
     ap.add_argument("--seed", type=int, default=20261003)
     ap.add_argument("--n", type=int, default=60, help="每格题数")
-    ap.add_argument("--out", default="data/tasks.json")
+    ap.add_argument("--out",
+                    default=os.path.join(os.path.dirname(os.path.dirname(
+                        os.path.abspath(__file__))), "data", "tasks.json"))
     a = ap.parse_args()
     tasks = []
     for fam in GENERATORS:
         for d in DIFFICULTIES:
             tasks += make_tasks(fam, d, a.n, a.seed)
-    import os
-    os.makedirs(os.path.dirname(a.out), exist_ok=True)
+    os.makedirs(os.path.dirname(os.path.abspath(a.out)), exist_ok=True)
     with open(a.out, "w", encoding="utf-8", newline="\n") as f:
         json.dump({"seed": a.seed, "n_per_cell": a.n,
                    "cells": [{"family": k, "difficulty": d}
