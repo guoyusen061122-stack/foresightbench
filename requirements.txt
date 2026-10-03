@@ -1,0 +1,10 @@
+# 本文件故意是空的（除注释外）。
+#
+# ForesightBench 的基准与指标**只使用 Python 3 标准库**：
+#   hashlib / json / math / random / re / statistics / dataclasses / argparse
+#
+# 不引入 numpy 不是为了"极简"，而是因为可复现性是本项目的核心声称之一：
+# 一个需要 numpy 版本对齐才能复现的评测，两年后大概率跑不起来。
+# 只有 llm/run_llm.py 需要网络凭据，它用的是标准库 urllib，仍然不需要第三方包。
+#
+# 因此：pip install -r requirements.txt 是**空操作**，这是有意为之。

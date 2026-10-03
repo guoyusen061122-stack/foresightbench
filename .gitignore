@@ -1,0 +1,20 @@
+# 缓存与临时文件
+__pycache__/
+*.pyc
+lit/cache/
+_det_probe_*.txt
+_*.txt
+
+# 生成物：结果本身是要提交的（报告里引用它），任务快照也是。
+# 但下面这些是"本地重跑会产生不同字节"的，不提交。
+benchmark/results/*.tmp
+
+# 模型凭据绝不进仓库
+.env
+*.key
+llm/results_llm.json
+
+# 编辑器
+.vscode/
+.idea/
+*.swp

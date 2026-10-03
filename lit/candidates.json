@@ -1,0 +1,146 @@
+[
+  {
+    "key": "kadavath2022know",
+    "title": "Language Models (Mostly) Know What They Know",
+    "authors": ["Saurav Kadavath", "Tom Conerly", "Amanda Askell", "Tom Henighan"],
+    "year": 2022,
+    "theme": "self-knowledge",
+    "why": "模型的自评概率与正确率相关，是「前瞻性元认知存在」的直接证据；本基准把它从单点自评扩展为可分离的四元组。"
+  },
+  {
+    "key": "lin2022uncertainty",
+    "title": "Teaching Models to Express Their Uncertainty in Words",
+    "authors": ["Stephanie Lin", "Jacob Hilton", "Owain Evans"],
+    "year": 2022,
+    "theme": "verbalized",
+    "why": "语言化的置信度表达；本基准的置信度来自求解过程而非语言，正是为了绕开「说得准不准」这一层。"
+  },
+  {
+    "key": "xiong2023confidence",
+    "title": "Can LLMs Express Their Uncertainty? An Empirical Evaluation of Confidence Elicitation in LLMs",
+    "authors": ["Miao Xiong", "Zhiyuan Hu", "Xinyang Lu"],
+    "year": 2023,
+    "theme": "calibration",
+    "why": "系统评测置信度引出方法；其结论之一就是校准差是普遍现象，支持本基准把校准单列为一维。"
+  },
+  {
+    "key": "guo2017calibration",
+    "title": "On Calibration of Modern Neural Networks",
+    "authors": ["Chuan Guo", "Geoff Pleiss", "Yu Sun", "Kilian Q. Weinberger"],
+    "year": 2017,
+    "theme": "calibration",
+    "why": "ECE 与可靠性图的经典来源；本基准的校准一维直接采用该口径。"
+  },
+  {
+    "key": "geifman2017selective",
+    "title": "Selective Classification for Deep Neural Networks",
+    "authors": ["Yonatan Geifman", "Ran El-Yaniv"],
+    "year": 2017,
+    "theme": "abstention",
+    "why": "选择性预测与风险—覆盖曲线的经典来源；本基准的「行为控制」一维（弃权效用、AURC）建立在这条线上。"
+  },
+  {
+    "key": "fleming2017hmetad",
+    "title": "HMeta-d: hierarchical Bayesian estimation of metacognitive efficiency from confidence ratings",
+    "authors": ["Stephen M. Fleming"],
+    "year": 2017,
+    "theme": "metacognition",
+    "why": "认知科学中把「元认知效率」与「任务表现」分离的标准做法；本基准用 AUROC 与校准分离来实现同一目标的可计算版本。"
+  },
+  {
+    "key": "kalai2024calibrated",
+    "title": "Calibrated Language Models Must Hallucinate",
+    "authors": ["Adam Tauman Kalai", "Santosh S. Vempala"],
+    "year": 2024,
+    "theme": "calibration",
+    "why": "校准与幻觉之间的必然联系：支撑本基准「不把校准当作唯一标准」的立场。"
+  },
+  {
+    "key": "farquhar2024semanticentropy",
+    "title": "Detecting hallucinations in large language models using semantic entropy",
+    "authors": ["Sebastian Farquhar", "Jannik Kossen", "Lorenz Kuhn", "Yarin Gal"],
+    "year": 2024,
+    "theme": "uncertainty",
+    "why": "无需真值的幻觉检测；与本基准的「前置信度」形成对照路线。"
+  },
+  {
+    "key": "huang2023cannotselfcorrect",
+    "title": "Large Language Models Cannot Self-Correct Reasoning Yet",
+    "authors": ["Jie Huang", "Xinyun Chen", "Swaroop Mishra"],
+    "year": 2023,
+    "theme": "self-knowledge",
+    "why": "自我纠错不可靠：本基准因此把「监控」与「纠正」分开测量，只测前者。"
+  },
+  {
+    "key": "balunovic2025matharena",
+    "title": "MathArena: Evaluating LLMs on Uncontaminated Math Competitions",
+    "authors": ["Mislav Balunovic", "Jasper Dekoninck", "Martin Vechev"],
+    "year": 2025,
+    "theme": "contamination",
+    "why": "污染会让评测失效；本基准用「私有种子 + 生成器参数化」来抵抗记忆。"
+  },
+  {
+    "key": "kapoor2023leakage",
+    "title": "Leakage and the reproducibility crisis in machine-learning-based science",
+    "authors": ["Sayash Kapoor", "Arvind Narayanan"],
+    "year": 2023,
+    "theme": "contamination",
+    "why": "泄漏与不可复现的系统性证据；支撑本基准对「可复现」的硬要求。"
+  },
+  {
+    "key": "lightman2023verify",
+    "title": "Let's Verify Step by Step",
+    "authors": ["Hunter Lightman", "Vineet Kosaraju", "Yura Burda"],
+    "year": 2023,
+    "theme": "verification",
+    "why": "过程监督；与本基准的「动手前预测」互补（前者在过程中，后者在过程前）。"
+  },
+  {
+    "key": "wang2022selfconsistency",
+    "title": "Self-Consistency Improves Chain of Thought Reasoning in Language Models",
+    "authors": ["Xuezhi Wang", "Jason Wei", "Dale Schuurmans"],
+    "year": 2022,
+    "theme": "verification",
+    "why": "采样一致性可作为不确定性的代理；本基准的 VoteSolver 沿用这一思路但放在受限采样下。"
+  },
+  {
+    "key": "bowman2022scalableoversight",
+    "title": "Measuring Progress on Scalable Oversight for Large Language Models",
+    "authors": ["Samuel R. Bowman", "Jeeyoon Hyun", "Ethan Perez"],
+    "year": 2022,
+    "theme": "oversight",
+    "why": "监督能力本身需要被测量；本基准是对「自我监督」这一子能力的可计算化。"
+  },
+  {
+    "key": "seshia2022verifiedai",
+    "title": "Toward verified artificial intelligence",
+    "authors": ["Sanjit A. Seshia", "Ankush Desai", "Tommaso Dreossi"],
+    "year": 2022,
+    "theme": "verification",
+    "why": "把形式化保证作为系统可靠性一等公民；本基准的「不依赖模型自评」立场与此一致。"
+  },
+  {
+    "key": "zhang2023sirenssong",
+    "title": "Siren's Song in the AI Ocean: A Survey on Hallucination in Large Language Models",
+    "authors": ["Yue Zhang", "Yafu Li", "Leyang Cui"],
+    "year": 2023,
+    "theme": "hallucination",
+    "why": "幻觉综述；提供「模型自评不可靠」这一背景。"
+  },
+  {
+    "key": "petrov2025prooforbluff",
+    "title": "Proof or Bluff? Evaluating LLMs on 2025 USA Math Olympiad",
+    "authors": ["Ivo Petrov", "Jasper Dekoninck", "Lyuben Baltadzhiev"],
+    "year": 2025,
+    "theme": "math-eval",
+    "why": "数学推理评测；说明「答对率」本身在难集上会塌到接近零，本基准因而必须同时看分辨力。"
+  },
+  {
+    "key": "petrov2025brokenmath",
+    "title": "BrokenMath: A Benchmark for Sycophancy in Theorem Proving with LLMs",
+    "authors": ["Ivo Petrov", "Jasper Dekoninck", "Lyuben Baltadzhiev"],
+    "year": 2025,
+    "theme": "math-eval",
+    "why": "迎合性作答：说明「自我评估」会被外部暗示污染，本基准的置信度因此取自求解过程而非提问。"
+  }
+]
